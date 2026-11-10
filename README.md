@@ -42,6 +42,10 @@ To deliver an engaging, polished experience from the moment any page loads:
 ```
 flexxiglobaltrade/
 │
+├── .github/
+│   └── workflows/
+│       └── deploy-pages.yml     # Automated GitHub Pages CI/CD workflow
+├── .nojekyll                    # Disables Jekyll processing on GitHub Pages
 ├── _headers                     # Cloudflare Pages security headers (CSP, nosniff, frame protection)
 ├── index.html                   # 01. Homepage (Starting animations, Action Hub, Counters, Services)
 ├── about.html                   # 02. About Us (Merchant Exporter business model & ethics)
@@ -69,7 +73,19 @@ flexxiglobaltrade/
 
 ---
 
-## 🚀 Cloudflare Pages Deployment
+## 🚀 GitHub Actions Deployment (GitHub Pages)
+
+The website includes an automated GitHub Actions deployment workflow located at [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
+
+### Quick Setup Steps:
+1. Push your repository to GitHub.
+2. In your GitHub repository, navigate to **Settings** &gt; **Pages**.
+3. Under **Build and deployment** &gt; **Source**, select **GitHub Actions**.
+4. Every push to `main` or `master` will automatically publish the website to GitHub Pages.
+
+---
+
+## ☁️ Cloudflare Pages Deployment
 1. Connect this repository to your **Cloudflare Dashboard &gt; Workers &amp; Pages**.
 2. Framework preset: **None**, Build command: **Empty**, Output directory: **`.`** (root).
-3. Instant global deployment on Cloudflare Edge with automated HTTPS.
+3. Instant global deployment on Cloudflare Edge with automated HTTPS and native `_headers` security enforcement.
