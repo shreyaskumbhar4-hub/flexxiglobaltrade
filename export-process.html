@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Export Process & Logistics | Flexxi Global Trade</title>
+  <meta name="description" content="Step-by-step export workflow from Buyer Enquiry, Sourcing, Quotation, Documentation, to Shipping & Logistics Coordination.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              dark: '#0b1120',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-[#0b1120] text-slate-100 flex flex-col min-h-screen relative antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- TOP BAR -->
+  <header class="border-b border-slate-800/80 bg-slate-950/80 text-xs text-slate-400 py-2 px-4 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="inline-flex items-center text-sky-400 font-medium">
+          <i class="fa-solid fa-earth-americas mr-1.5"></i> Merchant Exporter · India to Global Markets
+        </span>
+      </div>
+      <div class="flex items-center space-x-5">
+        <a href="mailto:info@flexxiglobaltrade.com" class="hover:text-sky-400 transition flex items-center">
+          <i class="fa-regular fa-envelope mr-1.5 text-sky-400"></i> info@flexxiglobaltrade.com
+        </a>
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition flex items-center text-emerald-400">
+          <i class="fa-brands fa-whatsapp mr-1.5"></i> WhatsApp Direct
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-[37px] z-40 bg-slate-900/90 backdrop-blur-xl border-b border-slate-800 shadow-2xl transition duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-sky-500/25">
+            <i class="fa-solid fa-ship text-lg"></i>
+          </div>
+          <div>
+            <span class="font-heading text-2xl font-black tracking-wider text-white flex items-center gap-1.5">
+              FLEXXI <span class="text-sky-400 text-sm font-semibold tracking-normal uppercase bg-sky-950/80 px-2 py-0.5 rounded border border-sky-800/60">GLOBAL TRADE</span>
+            </span>
+            <p class="text-[11px] text-slate-400 font-medium tracking-tight -mt-0.5">Bridging Indian Quality to the World</p>
+          </div>
+        </a>
+
+        <div class="hidden lg:flex items-center space-x-7 text-sm font-medium">
+          <a href="index.html" class="nav-link text-slate-300 transition hover:text-sky-400">Home</a>
+          <a href="about.html" class="nav-link text-slate-300 transition hover:text-sky-400">About Us</a>
+          <a href="products.html" class="nav-link text-slate-300 transition hover:text-sky-400">Products</a>
+          <a href="quality.html" class="nav-link text-slate-300 transition hover:text-sky-400">Quality & Sourcing</a>
+          <a href="export-process.html" class="nav-link text-sky-400 font-semibold transition hover:text-sky-300">Export Process</a>
+          <a href="markets.html" class="nav-link text-slate-300 transition hover:text-sky-400">Global Markets</a>
+          <a href="contact.html" class="nav-link text-slate-300 transition hover:text-sky-400">Contact</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <a href="rfq.html" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold text-xs tracking-wide uppercase text-white bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 transition border border-sky-400/30">
+            <i class="fa-solid fa-file-invoice-dollar mr-2"></i> Request a Quote
+          </a>
+          <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" class="lg:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-800 bg-slate-900/95 px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Home</a>
+      <a href="about.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">About Us</a>
+      <a href="products.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Products</a>
+      <a href="quality.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Quality & Sourcing</a>
+      <a href="export-process.html" class="block py-2 px-3 rounded-lg text-sky-400 bg-slate-800 font-medium">Export Process & Logistics</a>
+      <a href="markets.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Global Markets</a>
+      <a href="contact.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB & HEADER -->
+  <section class="py-16 bg-slate-950/70 border-b border-slate-800 relative bg-grid-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center space-x-2 text-xs text-slate-400 mb-3">
+        <a href="index.html" class="hover:text-sky-400">Home</a>
+        <span>/</span>
+        <span class="text-sky-400 font-medium">Export Workflow</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white font-heading">
+        Export Process & <span class="text-gradient">Logistics Flow</span>
+      </h1>
+      <p class="text-slate-300 max-w-2xl mt-4 text-base font-light">
+        A completely transparent 6-stage operational pipeline engineered to protect buyers, ensure zero documentation errors, and expedite customs clearance.
+      </p>
+    </div>
+  </section>
+
+  <!-- 6-STAGE WORKFLOW TIMELINE -->
+  <section class="py-20 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="relative border-l-2 border-slate-800 ml-4 sm:ml-8 space-y-12">
+        
+        <!-- Step 1 -->
+        <div class="relative pl-8 sm:pl-12 group">
+          <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-900 border-2 border-sky-500 flex items-center justify-center text-xs font-bold text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition">
+            1
+          </div>
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800">
+            <span class="text-xs font-semibold uppercase text-sky-400 tracking-wider">Step 01</span>
+            <h3 class="text-xl font-bold text-white mt-1 font-heading">Buyer Enquiry (RFQ)</h3>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+              The buyer initiates an inquiry specifying commodity grades, required quantity (in Metric Tons or Container loads), preferred packaging configuration, destination seaport, and target delivery timeframe.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-400">
+              <span class="px-2.5 py-1 rounded bg-slate-800">Target HS Code</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800">Discharge Port</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800">Incoterms Required (FOB / CIF / CFR)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative pl-8 sm:pl-12 group">
+          <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-900 border-2 border-indigo-500 flex items-center justify-center text-xs font-bold text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition">
+            2
+          </div>
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800">
+            <span class="text-xs font-semibold uppercase text-indigo-400 tracking-wider">Step 02</span>
+            <h3 class="text-xl font-bold text-white mt-1 font-heading">Product Sourcing & Lab Verification</h3>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+              Our procurement team connects directly with certified cultivation clusters and processing mills. Representative lot samples are gathered and dispatched to accredited laboratories for COA verification.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-400">
+              <span class="px-2.5 py-1 rounded bg-slate-800">Origin Traceability</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800">Pre-Shipment Analysis</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800">Lot Allocation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative pl-8 sm:pl-12 group">
+          <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-900 border-2 border-emerald-500 flex items-center justify-center text-xs font-bold text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white transition">
+            3
+          </div>
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800">
+            <span class="text-xs font-semibold uppercase text-emerald-400 tracking-wider">Step 03</span>
+            <h3 class="text-xl font-bold text-white mt-1 font-heading">Commercial Quotation & Proforma Invoice (PI)</h3>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+              We provide a transparent Proforma Invoice stating exact unit pricing, Incoterm conditions, agreed payment parameters (Irrevocable LC at sight or confirmed TT), shipment schedule, and bank coordination.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-400">
+              <span class="px-2.5 py-1 rounded bg-slate-800">Proforma Invoice</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800">Contract Signing</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800">LC / TT Financial Terms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="relative pl-8 sm:pl-12 group">
+          <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-900 border-2 border-amber-500 flex items-center justify-center text-xs font-bold text-amber-400 group-hover:bg-amber-500 group-hover:text-white transition">
+            4
+          </div>
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800">
+            <span class="text-xs font-semibold uppercase text-amber-400 tracking-wider">Step 04</span>
+            <h3 class="text-xl font-bold text-white mt-1 font-heading">Export Documentation Suite</h3>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+              Preparation of the complete statutory export document package required for seamless customs clearance at both origin and destination ports.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs text-slate-300">
+              <div class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Commercial Invoice</div>
+              <div class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Packing List (Detailed)</div>
+              <div class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Certificate of Origin</div>
+              <div class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Phytosanitary Certificate</div>
+              <div class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Certificate of Analysis (COA)</div>
+              <div class="flex items-center"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Bill of Lading (B/L)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="relative pl-8 sm:pl-12 group">
+          <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-900 border-2 border-rose-500 flex items-center justify-center text-xs font-bold text-rose-400 group-hover:bg-rose-500 group-hover:text-white transition">
+            5
+          </div>
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800">
+            <span class="text-xs font-semibold uppercase text-rose-400 tracking-wider">Step 05</span>
+            <h3 class="text-xl font-bold text-white mt-1 font-heading">Shipping & Logistics Coordination</h3>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+              Booking freight containers with premier ocean shipping lines (e.g., Maersk, MSC, CMA CGM). Coordination of container stuffing, weighing (VGM), custom house agent (CHA) filing, and port gate-in.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-400">
+              <span class="px-2.5 py-1 rounded bg-slate-800">Nhava Sheva (JNPT)</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800">Mundra Port</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800">Chennai Port</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="relative pl-8 sm:pl-12 group">
+          <div class="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-slate-900 border-2 border-sky-400 flex items-center justify-center text-xs font-bold text-sky-400 group-hover:bg-sky-400 group-hover:text-white transition">
+            6
+          </div>
+          <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800">
+            <span class="text-xs font-semibold uppercase text-sky-400 tracking-wider">Step 06</span>
+            <h3 class="text-xl font-bold text-white mt-1 font-heading">Delivery Coordination & Real-Time Tracking</h3>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+              Immediate sharing of vessel tracking numbers, container seal numbers, and courier dispatch of original shipping documents via DHL/FedEx for quick destination clearing.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs text-slate-400">
+              <span class="px-2.5 py-1 rounded bg-slate-800">Vessel Tracking</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800">Express Document Courier</span>
+              <span class="px-2.5 py-1 rounded bg-slate-800">Post-Arrival Follow-up</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-16 text-center">
+        <a href="rfq.html" class="inline-flex items-center px-8 py-4 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold text-sm uppercase tracking-wider hover:from-sky-400 transition shadow-xl">
+          <i class="fa-solid fa-paper-plane mr-2"></i> Start Your Procurement Workflow
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl pulse-whatsapp flex items-center justify-center hover:scale-110 transition" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800/80 text-slate-400 text-sm py-10 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs space-y-2">
+      <p>© 2026 Flexxi Global Trade · Bridging Indian Quality to the World · B2B Merchant Exporter.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

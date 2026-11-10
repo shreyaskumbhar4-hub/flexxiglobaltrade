@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote (RFQ) | Flexxi Global Trade</title>
+  <meta name="description" content="Submit your B2B container request for quotation. Get verified FOB/CIF pricing for Moringa Powder, Guar Gum, Onion Powder, Groundnuts, and Basmati Rice.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              dark: '#0b1120',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-[#0b1120] text-slate-100 flex flex-col min-h-screen relative antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- TOP BAR -->
+  <header class="border-b border-slate-800/80 bg-slate-950/80 text-xs text-slate-400 py-2 px-4 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="inline-flex items-center text-sky-400 font-medium">
+          <i class="fa-solid fa-earth-americas mr-1.5"></i> Merchant Exporter · India to Global Markets
+        </span>
+      </div>
+      <div class="flex items-center space-x-5">
+        <a href="mailto:info@flexxiglobaltrade.com" class="hover:text-sky-400 transition flex items-center">
+          <i class="fa-regular fa-envelope mr-1.5 text-sky-400"></i> info@flexxiglobaltrade.com
+        </a>
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition flex items-center text-emerald-400">
+          <i class="fa-brands fa-whatsapp mr-1.5"></i> WhatsApp Direct
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-[37px] z-40 bg-slate-900/90 backdrop-blur-xl border-b border-slate-800 shadow-2xl transition duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-sky-500/25">
+            <i class="fa-solid fa-ship text-lg"></i>
+          </div>
+          <div>
+            <span class="font-heading text-2xl font-black tracking-wider text-white flex items-center gap-1.5">
+              FLEXXI <span class="text-sky-400 text-sm font-semibold tracking-normal uppercase bg-sky-950/80 px-2 py-0.5 rounded border border-sky-800/60">GLOBAL TRADE</span>
+            </span>
+            <p class="text-[11px] text-slate-400 font-medium tracking-tight -mt-0.5">Bridging Indian Quality to the World</p>
+          </div>
+        </a>
+
+        <div class="hidden lg:flex items-center space-x-7 text-sm font-medium">
+          <a href="index.html" class="nav-link text-slate-300 transition hover:text-sky-400">Home</a>
+          <a href="about.html" class="nav-link text-slate-300 transition hover:text-sky-400">About Us</a>
+          <a href="products.html" class="nav-link text-slate-300 transition hover:text-sky-400">Products</a>
+          <a href="quality.html" class="nav-link text-slate-300 transition hover:text-sky-400">Quality & Sourcing</a>
+          <a href="export-process.html" class="nav-link text-slate-300 transition hover:text-sky-400">Export Process</a>
+          <a href="markets.html" class="nav-link text-slate-300 transition hover:text-sky-400">Global Markets</a>
+          <a href="contact.html" class="nav-link text-slate-300 transition hover:text-sky-400">Contact</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <a href="rfq.html" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold text-xs tracking-wide uppercase text-white bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 transition border border-sky-400/30">
+            <i class="fa-solid fa-file-invoice-dollar mr-2"></i> Request a Quote
+          </a>
+          <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" class="lg:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-800 bg-slate-900/95 px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Home</a>
+      <a href="about.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">About Us</a>
+      <a href="products.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Products</a>
+      <a href="quality.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Quality & Sourcing</a>
+      <a href="export-process.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Export Process & Logistics</a>
+      <a href="markets.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Global Markets</a>
+      <a href="contact.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB & HEADER -->
+  <section class="py-16 bg-slate-950/70 border-b border-slate-800 relative bg-grid-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center space-x-2 text-xs text-slate-400 mb-3">
+        <a href="index.html" class="hover:text-sky-400">Home</a>
+        <span>/</span>
+        <span class="text-sky-400 font-medium">Commercial RFQ</span>
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white font-heading">
+        Request a <span class="text-gradient">Formal Quotation (RFQ)</span>
+      </h1>
+      <p class="text-slate-300 max-w-2xl mt-4 text-base font-light">
+        Submit your detailed requirements for prompt analysis. Our trade desk provides comprehensive FOB / CIF pricing, specifications, and packaging breakdowns.
+      </p>
+    </div>
+  </section>
+
+  <!-- FORM & INFO SECTION -->
+  <section class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Form -->
+        <div class="lg:col-span-8">
+          <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-2xl">
+            <h2 class="text-2xl font-bold text-white font-heading mb-6 flex items-center">
+              <i class="fa-solid fa-file-signature text-sky-400 mr-3"></i> Commercial Buyer Inquiry Form
+            </h2>
+
+            <form id="rfq-form" class="space-y-6">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Buyer Name -->
+                <div>
+                  <label for="buyer-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                    Buyer / Representative Name <span class="text-rose-400">*</span>
+                  </label>
+                  <input type="text" id="buyer-name" required placeholder="e.g. Johnathan Tan" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 text-sm">
+                </div>
+
+                <!-- Company Name -->
+                <div>
+                  <label for="company-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                    Company / Enterprise Name <span class="text-rose-400">*</span>
+                  </label>
+                  <input type="text" id="company-name" required placeholder="e.g. Pacific Food Ingredients Pte Ltd" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 text-sm">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Official Email -->
+                <div>
+                  <label for="buyer-email" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                    Corporate Email Address <span class="text-rose-400">*</span>
+                  </label>
+                  <input type="email" id="buyer-email" required placeholder="e.g. procurement@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 text-sm">
+                </div>
+
+                <!-- Destination Country -->
+                <div>
+                  <label for="buyer-country" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                    Destination Country & Port <span class="text-rose-400">*</span>
+                  </label>
+                  <input type="text" id="buyer-country" required placeholder="e.g. Malaysia (Port Klang) / UAE (Jebel Ali)" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 text-sm">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Product Required -->
+                <div>
+                  <label for="buyer-product" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                    Product Required <span class="text-rose-400">*</span>
+                  </label>
+                  <select id="buyer-product" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 text-sm">
+                    <option value="">-- Select Commodity --</option>
+                    <option value="Moringa Powder">Moringa Powder (Leaf Powder)</option>
+                    <option value="Guar Gum Powder">Guar Gum Powder (Food/Industrial Grade)</option>
+                    <option value="Onion Powder / Flakes">Dehydrated Onion Powder / Flakes</option>
+                    <option value="Banana Powder">Banana Powder (Green / Ripe)</option>
+                    <option value="Indian Groundnuts">Indian Groundnuts (Bold / Java Peanuts)</option>
+                    <option value="Basmati Rice">Premium Basmati Rice (1121 / 1509)</option>
+                    <option value="Multiple Commodities / Other">Multiple Commodities / Custom Request</option>
+                  </select>
+                </div>
+
+                <!-- Required Quantity -->
+                <div>
+                  <label for="buyer-quantity" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                    Required Quantity (MOQ Basis) <span class="text-rose-400">*</span>
+                  </label>
+                  <input type="text" id="buyer-quantity" required placeholder="e.g. 1 x 20ft FCL or 5 Metric Tons" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 text-sm">
+                </div>
+              </div>
+
+              <!-- Message / Specifications -->
+              <div>
+                <label for="buyer-message" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                  Detailed Specifications, Packaging & Target Terms
+                </label>
+                <textarea id="buyer-message" rows="4" placeholder="Detail any specific mesh size, moisture tolerance, packaging bag preference (e.g., 25kg Kraft bags), target Incoterm (FOB Mundra / CIF Port Klang), or delivery schedule." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 text-sm"></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div>
+                <button type="submit" class="w-full py-4 rounded-xl font-bold text-sm tracking-wide uppercase text-white bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 shadow-xl shadow-sky-500/25 transition duration-300 flex items-center justify-center">
+                  <i class="fa-solid fa-paper-plane mr-2"></i> Submit B2B Quotation Request
+                </button>
+                <p class="text-[11px] text-slate-500 text-center mt-3">
+                  Direct dispatch to Flexxi Global Trade sales desk. No credit card or immediate online payment required.
+                </p>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- Right: B2B Order Policies -->
+        <div class="lg:col-span-4 space-y-6">
+          
+          <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+            <h3 class="text-base font-bold text-white font-heading mb-3 flex items-center">
+              <i class="fa-solid fa-circle-check text-emerald-400 mr-2"></i> B2B Wholesale Focus
+            </h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              We operate exclusively on business-to-business bulk orders and commercial container loads. We do not maintain retail shopping carts or process online card payments.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+            <h3 class="text-base font-bold text-white font-heading mb-3 flex items-center">
+              <i class="fa-solid fa-clock text-sky-400 mr-2"></i> Fast Quotation Response
+            </h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Every valid commercial inquiry is assessed with current spot market rates and container ocean freight to present you with an actionable Proforma Quotation within 24 business hours.
+            </p>
+          </div>
+
+          <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+            <h3 class="text-base font-bold text-white font-heading mb-3 flex items-center">
+              <i class="fa-solid fa-shield-halved text-indigo-400 mr-2"></i> Verified Documentation
+            </h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Every quotation includes clear indications of lot-wise testing, laboratory COAs, phytosanitary issuance, and custom packaging capabilities.
+            </p>
+          </div>
+
+          <!-- Direct Instant Contacts -->
+          <div class="glass-panel p-6 rounded-2xl border border-slate-800 bg-slate-900/40">
+            <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Prefer Immediate Dialogue?</h4>
+            <div class="space-y-3 text-xs">
+              <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="flex items-center text-emerald-400 hover:text-emerald-300 font-medium">
+                <i class="fa-brands fa-whatsapp text-base mr-2"></i> Chat with Export Desk on WhatsApp
+              </a>
+              <a href="mailto:info@flexxiglobaltrade.com" class="flex items-center text-sky-400 hover:text-sky-300 font-medium">
+                <i class="fa-regular fa-envelope text-base mr-2"></i> Email: info@flexxiglobaltrade.com
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCCESS / CONFIRMATION MODAL -->
+  <div id="form-success-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="glass-panel max-w-md w-full p-8 rounded-3xl border border-sky-500/40 shadow-2xl text-center relative">
+      <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl mx-auto mb-4 border border-emerald-500/30">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 class="text-xl font-bold text-white font-heading">RFQ Prepared Successfully!</h3>
+      <p class="text-slate-300 text-xs mt-2 leading-relaxed">
+        Your commercial specifications have been formatted. Please choose how you would like to transmit your inquiry to our export team immediately:
+      </p>
+
+      <div class="mt-6 space-y-3">
+        <a id="modal-email-btn" href="#" class="block w-full py-3 px-4 rounded-xl bg-sky-500 hover:bg-sky-400 text-white font-semibold text-xs uppercase tracking-wider transition">
+          <i class="fa-solid fa-envelope mr-2"></i> Send via Official Email
+        </a>
+        <a id="modal-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="block w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs uppercase tracking-wider transition">
+          <i class="fa-brands fa-whatsapp mr-2"></i> Send via WhatsApp Business
+        </a>
+      </div>
+
+      <button id="close-modal-btn" class="mt-4 text-xs text-slate-500 hover:text-slate-300 underline">
+        Close and edit details
+      </button>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl pulse-whatsapp flex items-center justify-center hover:scale-110 transition" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800/80 text-slate-400 text-sm py-10 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs space-y-2">
+      <p>© 2026 Flexxi Global Trade · Bridging Indian Quality to the World · B2B Merchant Exporter.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // URL Query parameters prefill (e.g. ?product=Moringa&country=Malaysia)
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const productParam = params.get('product');
+      const countryParam = params.get('country');
+      
+      if (productParam) {
+        const productSelect = document.getElementById('buyer-product');
+        if (productSelect) {
+          for (let option of productSelect.options) {
+            if (option.value.toLowerCase().includes(productParam.toLowerCase())) {
+              option.selected = true;
+              break;
+            }
+          }
+        }
+      }
+
+      if (countryParam) {
+        const countryInput = document.getElementById('buyer-country');
+        if (countryInput) {
+          countryInput.value = countryParam;
+        }
+      }
+    });
+  </script>
+</body>
+</html>

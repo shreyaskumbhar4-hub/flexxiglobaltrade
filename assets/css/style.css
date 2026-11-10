@@ -1,0 +1,229 @@
+/* Flexxi Global Trade - Corporate B2B Logistics Design System */
+/* Signature Theme: Deep Navy (#081226 / #0b1a36), Crisp White (#ffffff), Bold Red Accent (#e11d48 / #dc2626) */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  /* Color Palette */
+  --c-navy-deep: #081226;
+  --c-navy-surface: #0e1e3d;
+  --c-navy-card: #13274f;
+  --c-navy-border: rgba(255, 255, 255, 0.1);
+  --c-white: #ffffff;
+  --c-slate-text: #cbd5e1;
+  --c-slate-muted: #94a3b8;
+  
+  /* Bold Red Accent (Action Buttons like TRACKING & GET A QUOTE) */
+  --c-red-accent: #e11d48;
+  --c-red-hover: #be123c;
+  --c-red-glow: rgba(225, 29, 72, 0.35);
+
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
+}
+
+html {
+  background-color: var(--c-navy-deep);
+  color: var(--c-slate-text);
+  font-family: var(--font-body);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--c-navy-deep);
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+}
+
+/* Geometric Angular Background Shapes */
+.angular-bg-shape {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  background: linear-gradient(135deg, rgba(14, 30, 61, 0.8) 0%, rgba(8, 18, 38, 0.4) 100%);
+  border-left: 3px solid var(--c-red-accent);
+}
+
+.geo-pattern-grid {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Frosted Corporate Sticky Header */
+.corp-header {
+  background: rgba(8, 18, 38, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--c-navy-border);
+}
+
+/* Bold Red Action Buttons (Capricorn Style) */
+.btn-red-action {
+  background-color: var(--c-red-accent);
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 0.65rem;
+  box-shadow: 0 10px 20px -5px var(--c-red-glow);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-red-action:hover {
+  background-color: var(--c-red-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px -5px rgba(225, 29, 72, 0.5);
+}
+
+/* Corporate Service & Content Cards */
+.service-card {
+  background: linear-gradient(145deg, rgba(14, 30, 61, 0.9) 0%, rgba(10, 22, 46, 0.95) 100%);
+  border: 1px solid var(--c-navy-border);
+  border-radius: 1rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(225, 29, 72, 0.4);
+  box-shadow: 0 20px 35px -10px rgba(8, 18, 38, 0.8), 0 0 20px rgba(225, 29, 72, 0.15);
+}
+
+.service-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: var(--c-red-accent);
+  transition: width 0.35s ease;
+}
+
+.service-card:hover::after {
+  width: 100%;
+}
+
+/* Flat Vector Line Icon Containers */
+.vector-icon-box {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 0.75rem;
+  background: rgba(225, 29, 72, 0.1);
+  border: 1px solid rgba(225, 29, 72, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--c-red-accent);
+  font-size: 1.35rem;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .vector-icon-box {
+  background: var(--c-red-accent);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Interactive Tabs & Tracking Bar */
+.action-hub-box {
+  background: rgba(14, 30, 61, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+/* Counters Grid */
+.stat-box {
+  background: rgba(14, 30, 61, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.85rem;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--c-red-accent);
+}
+
+/* Infinite Marquee */
+.marquee-container {
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+  gap: 3rem;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 3rem;
+  animation: scrollMarquee 26s linear infinite;
+}
+
+@keyframes scrollMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - 3rem)); }
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* Top Scroll Progress Indicator */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #e11d48, #0284c7);
+  z-index: 100;
+  width: 0%;
+  transition: width 0.1s ease-out;
+}
+
+/* Floating WhatsApp Glow */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  50% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+}
+
+.pulse-whatsapp {
+  animation: pulseGlow 2.5s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: var(--c-navy-deep); }
+::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #334155; }
