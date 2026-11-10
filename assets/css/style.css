@@ -1,9 +1,7 @@
 /* Flexxi Global Trade - Ultra-Reliable Global Trade & Maritime Corporate System */
-/* Color Palette: Deep Maritime Navy (#071120 / #0c1a30), Sovereign Royal Blue (#2563eb), Warm Champagne Gold (#d97706 / #f59e0b), Crisp Snow White (#ffffff) */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 :root {
-  /* High-Trust Reliable Corporate Tones */
   --bg-navy-deep: #071120;
   --bg-navy-surface: #0d1b32;
   --bg-navy-card: #122443;
@@ -11,7 +9,6 @@
   --border-subtle: rgba(255, 255, 255, 0.09);
   --border-focus: rgba(37, 99, 235, 0.45);
 
-  /* Primary Trust Colors: Sovereign Maritime Blue & Subtle Warm Gold Accents */
   --c-blue-primary: #2563eb;
   --c-blue-hover: #1d4ed8;
   --c-blue-glow: rgba(37, 99, 235, 0.28);
@@ -57,20 +54,39 @@ h1, h2, h3, h4, .font-heading {
    STARTING / HERO ENTRANCE KEYFRAME ANIMATIONS
    ========================================================== */
 @keyframes heroFadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-24px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroScaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-hero-fade-down { animation: heroFadeDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-hero-fade-up { opacity: 0; animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards; }
+.animate-hero-lead { opacity: 0; animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards; }
+.animate-hero-actions { opacity: 0; animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.45s forwards; }
+.animate-hero-card { opacity: 0; animation: heroScaleIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards; }
+.floating-element { animation: floatGentle 6s ease-in-out infinite; }
+
+/* ==========================================================
+   ANIMATED & ATTRACTIVE HEADER SYSTEM
+   ========================================================== */
+@keyframes navSlideDown {
   from {
     opacity: 0;
-    transform: translateY(32px);
+    transform: translateY(-100%);
   }
   to {
     opacity: 1;
@@ -78,55 +94,100 @@ h1, h2, h3, h4, .font-heading {
   }
 }
 
-@keyframes heroScaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.94);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+@keyframes compassSpin {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-25deg); }
+  75% { transform: rotate(25deg); }
+  100% { transform: rotate(0deg); }
 }
 
-@keyframes floatGentle {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
+@keyframes shimmerEffect {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
-.animate-hero-fade-down {
-  animation: heroFadeDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+.header-entrance-anim {
+  animation: navSlideDown 0.75s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.animate-hero-fade-up {
-  opacity: 0;
-  animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+/* Glassmorphism Navbar with ambient edge reflection */
+.reliable-navbar {
+  background: rgba(7, 17, 32, 0.82);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  transition: all 0.35s ease;
 }
 
-.animate-hero-lead {
-  opacity: 0;
-  animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+/* Shimmer Line underneath the navbar */
+.navbar-shimmer-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(56, 189, 248, 0.3) 25%, 
+    rgba(245, 158, 11, 0.6) 50%, 
+    rgba(37, 99, 235, 0.4) 75%, 
+    transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmerEffect 8s linear infinite;
 }
 
-.animate-hero-actions {
-  opacity: 0;
-  animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.45s forwards;
+/* Interactive Compass Spin on Logo Hover */
+.logo-icon-box {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .logo-icon-box {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.6);
+}
+.group:hover .logo-icon-box i {
+  animation: compassSpin 1.2s ease-in-out;
 }
 
-.animate-hero-card {
-  opacity: 0;
-  animation: heroScaleIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards;
+/* Nav Item Animated Sliding Underline */
+.nav-link-item {
+  position: relative;
+  padding: 0.5rem 0.2rem;
+  transition: color 0.25s ease;
 }
 
-.floating-element {
-  animation: floatGentle 6s ease-in-out infinite;
+.nav-link-item::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #38bdf8, #2563eb);
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(-50%);
 }
 
-/* Subtle Architectural Ambient Background Grids */
+.nav-link-item:hover {
+  color: #ffffff !important;
+}
+
+.nav-link-item:hover::after {
+  width: 100%;
+}
+
+.nav-link-active {
+  color: #60a5fa !important;
+  font-weight: 700;
+}
+
+.nav-link-active::after {
+  width: 100%;
+  background: linear-gradient(90deg, #60a5fa, #f59e0b);
+}
+
+/* Ambient Background Meshes */
 .reliable-bg-mesh {
   background-image: 
     radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.15) 0%, transparent 45%),
@@ -142,15 +203,7 @@ h1, h2, h3, h4, .font-heading {
   background-size: 48px 48px;
 }
 
-/* Sophisticated Frosted Navbar */
-.reliable-navbar {
-  background: rgba(7, 17, 32, 0.88);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-/* Elegant High-Trust Action Buttons */
+/* Action Buttons */
 .btn-primary-blue {
   background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
   color: #ffffff;
