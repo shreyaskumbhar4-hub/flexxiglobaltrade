@@ -1,15 +1,16 @@
 /**
- * Flexxi Global Trade - Interactive Polish & Micro-interactions
+ * Flexxi Global Trade - Reliable Corporate Interactions
  * Features:
- * - Rule 39: Top Progress Indicator
- * - Rule 33 & 40: Intersection Observer Scroll-driven staggered entry
- * - Rule 32: Magnetic Button Effect on primary CTA
- * - Safe XSS RFQ submissions & Mobile Navigation
+ * - Starting Entrance Transitions & Page Load Reveals
+ * - High-Trust Shipment Verification & Waybill Demo
+ * - Mobile Navigation Drawer Toggle
+ * - Operation Highlights Numeric Counters (IntersectionObserver)
+ * - Safe Form Submissions (Anti-XSS Sanitization)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. Rule 39: Progress Indicator at Top
+  // 1. Scroll Progress Bar
   const progressBar = document.getElementById('scroll-progress');
   if (progressBar) {
     window.addEventListener('scroll', () => {
@@ -20,52 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // 2. Rule 33 & 40: Scroll-Driven Fade-ins with Staggered Grid Entry
-  const animatedElements = document.querySelectorAll('.fade-in-on-scroll');
-  if ('IntersectionObserver' in window && animatedElements.length > 0) {
-    const observer = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const delay = entry.target.getAttribute('data-delay') || 0;
-          setTimeout(() => {
-            entry.target.classList.add('is-visible');
-          }, delay);
-          obs.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    animatedElements.forEach(el => observer.observe(el));
-  } else {
-    animatedElements.forEach(el => el.classList.add('is-visible'));
-  }
-
-  // 3. Rule 32: Magnetic Button Effect on Primary CTAs (Desktop only)
-  const magneticButtons = document.querySelectorAll('.magnetic-btn');
-  if (window.matchMedia('(pointer: fine)').matches) {
-    magneticButtons.forEach(btn => {
-      btn.addEventListener('mousemove', (e) => {
-        const rect = btn.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        btn.style.transform = `translate(${x * 0.22}px, ${y * 0.22}px)`;
-      });
-
-      btn.addEventListener('mouseleave', () => {
-        btn.style.transform = 'translate(0px, 0px)';
-        btn.style.transition = 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)';
-      });
-
-      btn.addEventListener('mouseenter', () => {
-        btn.style.transition = 'none';
-      });
-    });
-  }
-
-  // 4. Mobile Menu Drawer Toggle
+  // 2. Responsive Collapsible Mobile Menu Drawer
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
@@ -77,16 +33,96 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. Active Navbar Link Highlighter
-  const currentPath = window.location.pathname;
-  const navLinks = document.querySelectorAll('.nav-link');
-  navLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (href && (currentPath.endsWith(href) || (href === 'index.html' && (currentPath.endsWith('/') || currentPath === '')))) {
-      link.classList.add('text-sky-400', 'font-semibold');
-      link.classList.remove('text-slate-300');
-    }
-  });
+  // 3. Tab Switching: Tracking vs Quick RFQ
+  const tabTrack = document.getElementById('tab-track');
+  const tabRfq = document.getElementById('tab-rfq');
+  const panelTrack = document.getElementById('panel-track');
+  const panelRfq = document.getElementById('panel-rfq');
+
+  if (tabTrack && tabRfq && panelTrack && panelRfq) {
+    tabTrack.addEventListener('click', () => {
+      tabTrack.classList.add('bg-blue-600', 'text-white');
+      tabTrack.classList.remove('bg-slate-800', 'text-slate-400');
+      tabRfq.classList.add('bg-slate-800', 'text-slate-400');
+      tabRfq.classList.remove('bg-blue-600', 'text-white');
+      panelTrack.classList.remove('hidden');
+      panelRfq.classList.add('hidden');
+    });
+
+    tabRfq.addEventListener('click', () => {
+      tabRfq.classList.add('bg-blue-600', 'text-white');
+      tabRfq.classList.remove('bg-slate-800', 'text-slate-400');
+      tabTrack.classList.add('bg-slate-800', 'text-slate-400');
+      tabTrack.classList.remove('bg-blue-600', 'text-white');
+      panelRfq.classList.remove('hidden');
+      panelTrack.classList.add('hidden');
+    });
+  }
+
+  // 4. Quick Tracking Action Tool Simulation (Safe Sanitized Demo)
+  const trackForm = document.getElementById('quick-track-form');
+  const trackInput = document.getElementById('quick-track-input');
+  const trackResult = document.getElementById('quick-track-result');
+
+  if (trackForm && trackInput && trackResult) {
+    trackForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const val = trackInput.value.trim();
+      if (!val) {
+        alert('Please enter your B/L or Container Number.');
+        return;
+      }
+
+      // Safe DOM Sanitization
+      const safeVal = val.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+      trackResult.classList.remove('hidden');
+      trackResult.innerHTML = `
+        <div class="p-4 rounded-xl bg-[#09152b] border border-blue-500/30 text-xs space-y-2 mt-3 animate-hero-fade-down">
+          <div class="flex flex-wrap justify-between items-center text-white font-mono gap-2">
+            <span class="font-bold text-sky-400">WAYBILL / B/L REF: ${safeVal}</span>
+            <span class="px-2.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800 text-[10px] font-semibold">ON SCHEDULE · CUSTOMS CLEARED</span>
+          </div>
+          <div class="text-slate-300">
+            <strong>Origin Port:</strong> Nhava Sheva (JNPT) / Mundra, India &rarr; <strong>Destination:</strong> Selected Seaport
+          </div>
+          <div class="text-slate-400 text-[11px] flex flex-wrap gap-4 pt-1.5 border-t border-slate-800">
+            <span><strong>Vessel:</strong> Ocean Cargo Carrier</span>
+            <span><strong>CHA Port Gate-In:</strong> Verified</span>
+            <span><strong>COA Batch Quality:</strong> Certified & Released</span>
+          </div>
+        </div>
+      `;
+    });
+  }
+
+  // 5. Number Counter Highlight Increment Animation
+  const counters = document.querySelectorAll('.counter-val');
+  if ('IntersectionObserver' in window && counters.length > 0) {
+    const counterObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = +entry.target.getAttribute('data-target');
+          let count = 0;
+          const speed = target > 100 ? 25 : 35;
+          const inc = Math.ceil(target / speed);
+          const updateCount = () => {
+            count += inc;
+            if (count < target) {
+              entry.target.innerText = count;
+              setTimeout(updateCount, 30);
+            } else {
+              entry.target.innerText = target;
+            }
+          };
+          updateCount();
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(c => counterObserver.observe(c));
+  }
 
   // 6. Safe RFQ Quote Submission & Mailto / WhatsApp Hand-off
   const quoteForm = document.getElementById('rfq-form');
@@ -109,15 +145,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const subject = encodeURIComponent(`B2B Formal RFQ: ${product} - ${companyName || buyerName}`);
       const body = encodeURIComponent(
-        `Dear Flexxi Global Trade Desk,\n\n` +
-        `We request a formal quotation (Proforma Invoice) for bulk commodity export:\n\n` +
+        `Dear Flexxi Global Trade Sales Desk,\n\n` +
+        `We request a formal commercial quotation (Proforma Invoice):\n\n` +
         `• Buyer Name: ${buyerName}\n` +
         `• Enterprise: ${companyName}\n` +
         `• Official Email: ${email}\n` +
         `• Destination Port/Country: ${country}\n` +
         `• Commodity Required: ${product}\n` +
         `• Target Quantity: ${quantity}\n` +
-        `• Notes & Specs:\n${message}\n\n` +
+        `• Specifications & Packaging:\n${message}\n\n` +
         `Awaiting your FOB/CIF commercial proposal.\n\nRegards,\n${buyerName}`
       );
 
