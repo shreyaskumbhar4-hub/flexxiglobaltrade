@@ -17,12 +17,15 @@
 
 ---
 
-### 2. Starting Entrance & Page Load Animations
-To give the website an immediate stylish and fluid feel upon opening:
-- **`animate-hero-fade-down`**: Header trust pill floats into position smoothly from above.
-- **`animate-hero-fade-up`**: Main headline and lead copy slide upward with cubic-bezier ease (`0.15s` & `0.3s` staggered delay).
-- **`animate-hero-actions`**: Call-to-action buttons reveal themselves in sequence (`0.45s`).
-- **`animate-hero-card` & `floating-element`**: Action Hub tracking card scales gracefully into focus with a continuous gentle floating float oscillation (`floating-element`).
+### 2. Attractive Animated Header & Starting Keyframe Motion
+To deliver an engaging, polished experience from the moment any page loads:
+- **`header-entrance-anim`**: Entire navbar slides smoothly down into view (`navSlideDown 0.7s cubic-bezier(0.16, 1, 0.3, 1)`).
+- **`navbar-shimmer-border`**: Dynamic horizontal light beam continuously sweeps across the underside of the header (`shimmerEffect 4s ease-in-out infinite`).
+- **`logo-icon-box` & Interactive Compass Spin**: The maritime compass icon gracefully pivots on hover and features a luminous halo glow.
+- **`nav-link-item` Hover Dynamics**: Nav items display an animated expand-from-center underline with subtle color glow on hover.
+- **`animate-hero-fade-down` & `animate-hero-fade-up`**: Hero badges, headings, and lead copy slide gracefully into position with staggered cubic-bezier curves.
+- **`animate-hero-card` & `floating-element`**: Action Hub tracking card scales into focus with a continuous gentle floating float oscillation (`floating-element`).
+- **Consistent Parity**: All 14 pages (8 top-level + 6 product deep dives) share the exact same attractive animated header, shimmer effect, and responsive mobile menu.
 
 ---
 

@@ -7,97 +7,93 @@
   <meta name="description" content="Explore Flexxi Global Trade's rigorous quality verification process: supplier sourcing audits, third-party lab testing, COA verification, and ISO-aligned packaging standards.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              500: '#0ea5e9',
-              600: '#0284c7',
-              700: '#0369a1',
-              dark: '#0b1120',
-            }
-          }
-        }
-      }
-    }
-  </script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="bg-[#0b1120] text-slate-100 flex flex-col min-h-screen relative antialiased selection:bg-sky-500 selection:text-white">
+<body class="bg-[#071120] text-slate-200 flex flex-col min-h-screen relative antialiased selection:bg-blue-600 selection:text-white reliable-bg-mesh reliable-grid-pattern">
 
-  <!-- TOP BAR -->
-  <header class="border-b border-slate-800/80 bg-slate-950/80 text-xs text-slate-400 py-2 px-4 backdrop-blur-md sticky top-0 z-50">
+  <div id="scroll-progress"></div>
+
+  <!-- TOP MARITIME GATEWAY BAR -->
+  <header class="border-b border-slate-800/80 bg-[#040a14]/95 text-xs text-slate-400 py-2.5 px-4 backdrop-blur-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center space-x-4">
-        <span class="inline-flex items-center text-sky-400 font-medium">
-          <i class="fa-solid fa-earth-americas mr-1.5"></i> Merchant Exporter · India to Global Markets
+        <span class="inline-flex items-center text-white font-semibold tracking-wide">
+          <i class="fa-solid fa-ship mr-2 text-sky-400"></i> MERCHANT EXPORTER · B2B SUPPLY CHAIN LOGISTICS
+        </span>
+        <span class="hidden md:inline-block text-slate-700">|</span>
+        <span class="hidden md:inline-flex items-center text-slate-300">
+          <i class="fa-solid fa-anchor mr-1.5 text-blue-400"></i> Primary Ocean Gateways: Nhava Sheva (JNPT) & Mundra Port
         </span>
       </div>
-      <div class="flex items-center space-x-5">
-        <a href="mailto:info@flexxiglobaltrade.com" class="hover:text-sky-400 transition flex items-center">
+      <div class="flex items-center space-x-6 text-xs">
+        <a href="mailto:info@flexxiglobaltrade.com" class="hover:text-white transition flex items-center">
           <i class="fa-regular fa-envelope mr-1.5 text-sky-400"></i> info@flexxiglobaltrade.com
         </a>
-        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition flex items-center text-emerald-400">
-          <i class="fa-brands fa-whatsapp mr-1.5"></i> WhatsApp Direct
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition flex items-center text-emerald-400 font-semibold">
+          <i class="fa-brands fa-whatsapp mr-1.5 text-sm"></i> WhatsApp Direct
         </a>
       </div>
     </div>
   </header>
 
-  <!-- NAVIGATION -->
-  <nav class="sticky top-[37px] z-40 bg-slate-900/90 backdrop-blur-xl border-b border-slate-800 shadow-2xl transition duration-300">
+  <!-- SOPHISTICATED & ATTRACTIVE ANIMATED NAVBAR -->
+  <nav class="sticky top-[39px] z-40 reliable-navbar header-entrance-anim shadow-2xl relative">
+    <div class="navbar-shimmer-border"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center space-x-3 group">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-sky-500/25">
-            <i class="fa-solid fa-ship text-lg"></i>
+        <a href="index.html" class="flex items-center space-x-3.5 group">
+          <div class="logo-icon-box w-11 h-11 rounded-xl bg-gradient-to-tr from-blue-600 via-blue-500 to-indigo-700 flex items-center justify-center text-white shadow-lg shadow-blue-600/30 border border-blue-400/30">
+            <i class="fa-solid fa-compass text-lg"></i>
           </div>
           <div>
-            <span class="font-heading text-2xl font-black tracking-wider text-white flex items-center gap-1.5">
-              FLEXXI <span class="text-sky-400 text-sm font-semibold tracking-normal uppercase bg-sky-950/80 px-2 py-0.5 rounded border border-sky-800/60">GLOBAL TRADE</span>
+            <span class="font-heading text-2xl font-black tracking-tight text-white flex items-center gap-2">
+              FLEXXI <span class="text-sky-400 text-xs font-bold tracking-wider uppercase bg-blue-950/80 px-2 py-0.5 rounded border border-blue-800/60 shadow-sm">GLOBAL TRADE</span>
             </span>
             <p class="text-[11px] text-slate-400 font-medium tracking-tight -mt-0.5">Bridging Indian Quality to the World</p>
           </div>
         </a>
 
         <div class="hidden lg:flex items-center space-x-7 text-sm font-medium">
-          <a href="index.html" class="nav-link text-slate-300 transition hover:text-sky-400">Home</a>
-          <a href="about.html" class="nav-link text-slate-300 transition hover:text-sky-400">About Us</a>
-          <a href="products.html" class="nav-link text-slate-300 transition hover:text-sky-400">Products</a>
-          <a href="quality.html" class="nav-link text-sky-400 font-semibold transition hover:text-sky-300">Quality & Sourcing</a>
-          <a href="export-process.html" class="nav-link text-slate-300 transition hover:text-sky-400">Export Process</a>
-          <a href="markets.html" class="nav-link text-slate-300 transition hover:text-sky-400">Global Markets</a>
-          <a href="contact.html" class="nav-link text-slate-300 transition hover:text-sky-400">Contact</a>
+          <a href="index.html" class="nav-link-item text-slate-300">Home</a>
+          <a href="about.html" class="nav-link-item text-slate-300">About Us</a>
+          <a href="products.html" class="nav-link-item text-slate-300">Products</a>
+          <a href="quality.html" class="nav-link-item nav-link-active">Quality & Sourcing</a>
+          <a href="export-process.html" class="nav-link-item text-slate-300">Export Process</a>
+          <a href="markets.html" class="nav-link-item text-slate-300">Global Markets</a>
+          <a href="contact.html" class="nav-link-item text-slate-300">Contact</a>
         </div>
 
-        <div class="flex items-center space-x-4">
-          <a href="rfq.html" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold text-xs tracking-wide uppercase text-white bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 transition border border-sky-400/30">
-            <i class="fa-solid fa-file-invoice-dollar mr-2"></i> Request a Quote
+        <div class="flex items-center space-x-3">
+          <a href="rfq.html" class="btn-primary-blue px-5 py-2.5 text-xs">
+            <i class="fa-solid fa-file-invoice mr-2 text-xs"></i> Request Quote
           </a>
-          <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" class="lg:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
-            <i class="fa-solid fa-bars text-xl"></i>
+          <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" class="lg:hidden p-2.5 rounded-xl text-slate-300 hover:text-white bg-slate-800/80 border border-slate-700 focus:outline-none">
+            <i class="fa-solid fa-bars-staggered text-lg"></i>
           </button>
         </div>
       </div>
     </div>
 
     <!-- Mobile Dropdown -->
-    <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-800 bg-slate-900/95 px-4 pt-3 pb-6 space-y-2">
-      <a href="index.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Home</a>
-      <a href="about.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">About Us</a>
-      <a href="products.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Products</a>
-      <a href="quality.html" class="block py-2 px-3 rounded-lg text-sky-400 bg-slate-800 font-medium">Quality & Sourcing</a>
-      <a href="export-process.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Export Process & Logistics</a>
-      <a href="markets.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Global Markets</a>
-      <a href="contact.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Contact Us</a>
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-800 bg-[#071120]/98 px-5 pt-3 pb-6 space-y-2.5 backdrop-blur-xl">
+      <a href="index.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">Home</a>
+      <a href="about.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">About Us</a>
+      <a href="products.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">Products</a>
+      <a href="quality.html" class="block py-2 px-3 rounded-lg text-white bg-blue-950/60 font-medium">Quality & Sourcing</a>
+      <a href="export-process.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">Export Process</a>
+      <a href="markets.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">Global Markets</a>
+      <a href="contact.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">Contact Us</a>
+      <div class="pt-3">
+        <a href="rfq.html" class="btn-primary-blue block w-full text-center py-3 text-xs">
+          Request Commercial RFQ
+        </a>
+      </div>
     </div>
   </nav>
 
   <!-- BREADCRUMB & HEADER -->
-  <section class="py-16 bg-slate-950/70 border-b border-slate-800 relative bg-grid-pattern">
+  <section class="py-16 bg-[#040a14]/60 border-b border-slate-800/80 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center space-x-2 text-xs text-slate-400 mb-3">
         <a href="index.html" class="hover:text-sky-400">Home</a>
@@ -105,7 +101,7 @@
         <span class="text-sky-400 font-medium">Quality Assurance</span>
       </div>
       <h1 class="text-3xl sm:text-5xl font-extrabold text-white font-heading">
-        Quality Assurance & <span class="text-gradient">Sourcing Process</span>
+        Quality Assurance & <span class="text-sky-400">Sourcing Gate</span>
       </h1>
       <p class="text-slate-300 max-w-2xl mt-4 text-base font-light">
         Our reputation rests on concrete testing and transparent audits. Learn how we verify every agricultural lot before commercial export dispatch.
@@ -119,10 +115,9 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
-        <!-- Pillar 1 -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+        <div class="reliable-card p-6 flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 mb-4 text-xl">
+            <div class="reliable-icon-box mb-4 text-sky-400">
               <i class="fa-solid fa-users-viewfinder"></i>
             </div>
             <h3 class="text-lg font-bold text-white font-heading">Supplier Sourcing Audit</h3>
@@ -130,15 +125,14 @@
               We vet local farmer cooperatives and processors for hygienic facilities, standardized machinery, and sustainable cultivation practices.
             </p>
           </div>
-          <div class="mt-4 pt-4 border-t border-slate-800/80 text-[11px] text-sky-400 font-medium">
+          <div class="mt-4 pt-4 border-t border-slate-800 text-[11px] text-sky-400 font-medium">
             Origin Due Diligence
           </div>
         </div>
 
-        <!-- Pillar 2 -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+        <div class="reliable-card p-6 flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4 text-xl">
+            <div class="reliable-icon-box mb-4 text-emerald-400">
               <i class="fa-solid fa-vial-circle-check"></i>
             </div>
             <h3 class="text-lg font-bold text-white font-heading">COA & Lab Testing</h3>
@@ -146,31 +140,29 @@
               Batch samples are analyzed for moisture limits, heavy metals, pesticide residues, and microbial counts at certified analytical laboratories.
             </p>
           </div>
-          <div class="mt-4 pt-4 border-t border-slate-800/80 text-[11px] text-emerald-400 font-medium">
+          <div class="mt-4 pt-4 border-t border-slate-800 text-[11px] text-emerald-400 font-medium">
             Certified Batch Analysis
           </div>
         </div>
 
-        <!-- Pillar 3 -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+        <div class="reliable-card p-6 flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-4 text-xl">
+            <div class="reliable-icon-box mb-4 text-amber-400">
               <i class="fa-solid fa-certificate"></i>
             </div>
-            <h3 class="text-lg font-bold text-white font-heading">Certifications (Per Lot)</h3>
+            <h3 class="text-lg font-bold text-white font-heading">Phytosanitary & Docs</h3>
             <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-              Where demanded by client jurisdiction, organic certifications, non-GMO declarations, and phytosanitary certificates are provided transparently.
+              Where demanded by client jurisdiction, organic declarations and phytosanitary certificates are provided transparently.
             </p>
           </div>
-          <div class="mt-4 pt-4 border-t border-slate-800/80 text-[11px] text-amber-400 font-medium">
-            Customs Documentation
+          <div class="mt-4 pt-4 border-t border-slate-800 text-[11px] text-amber-400 font-medium">
+            Customs Clearance
           </div>
         </div>
 
-        <!-- Pillar 4 -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+        <div class="reliable-card p-6 flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-4 text-xl">
+            <div class="reliable-icon-box mb-4 text-blue-400">
               <i class="fa-solid fa-box-archive"></i>
             </div>
             <h3 class="text-lg font-bold text-white font-heading">Packaging Standards</h3>
@@ -178,7 +170,7 @@
               Food-grade multiwall kraft paper sacks, aluminum vacuum insets, and palletized shrink-wrapping designed to resist marine transit humidity.
             </p>
           </div>
-          <div class="mt-4 pt-4 border-t border-slate-800/80 text-[11px] text-indigo-400 font-medium">
+          <div class="mt-4 pt-4 border-t border-slate-800 text-[11px] text-blue-400 font-medium">
             Marine Moisture Shield
           </div>
         </div>
@@ -188,19 +180,19 @@
     </div>
   </section>
 
-  <!-- STEP BY STEP QUALITY CONTROL WORKFLOW -->
-  <section class="py-20 bg-slate-950/70 border-t border-slate-800">
+  <!-- 4-STAGE QUALITY GATE -->
+  <section class="py-20 bg-[#050c18] border-t border-slate-800/80">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <span class="text-sky-400 text-xs font-bold tracking-widest uppercase">Methodology</span>
+        <span class="trust-pill mb-2">Methodology</span>
         <h2 class="text-3xl font-extrabold text-white mt-2 font-heading">Our 4-Stage Quality Gate</h2>
       </div>
 
       <div class="space-y-6">
         
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div class="reliable-card p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div class="flex items-center space-x-4">
-            <span class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-sm">01</span>
+            <span class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-sm font-mono">01</span>
             <div>
               <h4 class="text-white font-bold text-base">Stage 1: Pre-Procurement Sample Verification</h4>
               <p class="text-slate-400 text-xs mt-1">Direct physical inspection of candidate harvest or powder batch before locking supplier contract.</p>
@@ -209,9 +201,9 @@
           <span class="text-xs px-3 py-1 rounded bg-slate-800 text-slate-300 font-mono">Sensory & Physical</span>
         </div>
 
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div class="reliable-card p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div class="flex items-center space-x-4">
-            <span class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">02</span>
+            <span class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm font-mono">02</span>
             <div>
               <h4 class="text-white font-bold text-base">Stage 2: Independent Lab Analytical Assessment</h4>
               <p class="text-slate-400 text-xs mt-1">Batch testing for moisture, ash, microbiological parameters (Salmonella, E. coli, Yeast/Mold) and purity.</p>
@@ -220,9 +212,9 @@
           <span class="text-xs px-3 py-1 rounded bg-slate-800 text-slate-300 font-mono">COA Testing</span>
         </div>
 
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div class="reliable-card p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div class="flex items-center space-x-4">
-            <span class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm">03</span>
+            <span class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm font-mono">03</span>
             <div>
               <h4 class="text-white font-bold text-base">Stage 3: Packing & Labeling Compliance Check</h4>
               <p class="text-slate-400 text-xs mt-1">Tamper-evident sealing, batch code printing, gross/net weight verification, and shipping mark adherence.</p>
@@ -231,9 +223,9 @@
           <span class="text-xs px-3 py-1 rounded bg-slate-800 text-slate-300 font-mono">Export Packaging</span>
         </div>
 
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div class="reliable-card p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div class="flex items-center space-x-4">
-            <span class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">04</span>
+            <span class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-sm font-mono">04</span>
             <div>
               <h4 class="text-white font-bold text-base">Stage 4: Container Stuffing & Port Dispatch</h4>
               <p class="text-slate-400 text-xs mt-1">Supervision during container loading to prevent physical damage, ensure moisture absorption desiccant bags, and customs sealing.</p>
@@ -245,7 +237,7 @@
       </div>
 
       <div class="mt-12 text-center">
-        <a href="rfq.html" class="inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold text-xs uppercase tracking-wider hover:from-sky-400 transition shadow-lg">
+        <a href="rfq.html" class="btn-primary-blue px-6 py-3.5 text-xs">
           Inquire with Your Custom Quality Parameters
         </a>
       </div>
@@ -258,7 +250,7 @@
   </a>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-950 border-t border-slate-800/80 text-slate-400 text-sm py-10 mt-auto">
+  <footer class="bg-[#040a14] border-t border-slate-800/80 text-slate-400 text-sm py-10 mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs space-y-2">
       <p>© 2026 Flexxi Global Trade · Bridging Indian Quality to the World · B2B Merchant Exporter.</p>
     </div>

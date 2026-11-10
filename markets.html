@@ -7,97 +7,93 @@
   <meta name="description" content="Explore our strategic target markets: Malaysia, UAE & GCC, Singapore, USA, and other prospective international trade corridors.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              500: '#0ea5e9',
-              600: '#0284c7',
-              700: '#0369a1',
-              dark: '#0b1120',
-            }
-          }
-        }
-      }
-    }
-  </script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="bg-[#0b1120] text-slate-100 flex flex-col min-h-screen relative antialiased selection:bg-sky-500 selection:text-white">
+<body class="bg-[#071120] text-slate-200 flex flex-col min-h-screen relative antialiased selection:bg-blue-600 selection:text-white reliable-bg-mesh reliable-grid-pattern">
 
-  <!-- TOP BAR -->
-  <header class="border-b border-slate-800/80 bg-slate-950/80 text-xs text-slate-400 py-2 px-4 backdrop-blur-md sticky top-0 z-50">
+  <div id="scroll-progress"></div>
+
+  <!-- TOP MARITIME GATEWAY BAR -->
+  <header class="border-b border-slate-800/80 bg-[#040a14]/95 text-xs text-slate-400 py-2.5 px-4 backdrop-blur-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center space-x-4">
-        <span class="inline-flex items-center text-sky-400 font-medium">
-          <i class="fa-solid fa-earth-americas mr-1.5"></i> Merchant Exporter · India to Global Markets
+        <span class="inline-flex items-center text-white font-semibold tracking-wide">
+          <i class="fa-solid fa-ship mr-2 text-sky-400"></i> MERCHANT EXPORTER · B2B SUPPLY CHAIN LOGISTICS
+        </span>
+        <span class="hidden md:inline-block text-slate-700">|</span>
+        <span class="hidden md:inline-flex items-center text-slate-300">
+          <i class="fa-solid fa-anchor mr-1.5 text-blue-400"></i> Primary Ocean Gateways: Nhava Sheva (JNPT) & Mundra Port
         </span>
       </div>
-      <div class="flex items-center space-x-5">
-        <a href="mailto:info@flexxiglobaltrade.com" class="hover:text-sky-400 transition flex items-center">
+      <div class="flex items-center space-x-6 text-xs">
+        <a href="mailto:info@flexxiglobaltrade.com" class="hover:text-white transition flex items-center">
           <i class="fa-regular fa-envelope mr-1.5 text-sky-400"></i> info@flexxiglobaltrade.com
         </a>
-        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition flex items-center text-emerald-400">
-          <i class="fa-brands fa-whatsapp mr-1.5"></i> WhatsApp Direct
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition flex items-center text-emerald-400 font-semibold">
+          <i class="fa-brands fa-whatsapp mr-1.5 text-sm"></i> WhatsApp Direct
         </a>
       </div>
     </div>
   </header>
 
-  <!-- NAVIGATION -->
-  <nav class="sticky top-[37px] z-40 bg-slate-900/90 backdrop-blur-xl border-b border-slate-800 shadow-2xl transition duration-300">
+  <!-- SOPHISTICATED & ATTRACTIVE ANIMATED NAVBAR -->
+  <nav class="sticky top-[39px] z-40 reliable-navbar header-entrance-anim shadow-2xl relative">
+    <div class="navbar-shimmer-border"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="index.html" class="flex items-center space-x-3 group">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-sky-500/25">
-            <i class="fa-solid fa-ship text-lg"></i>
+        <a href="index.html" class="flex items-center space-x-3.5 group">
+          <div class="logo-icon-box w-11 h-11 rounded-xl bg-gradient-to-tr from-blue-600 via-blue-500 to-indigo-700 flex items-center justify-center text-white shadow-lg shadow-blue-600/30 border border-blue-400/30">
+            <i class="fa-solid fa-compass text-lg"></i>
           </div>
           <div>
-            <span class="font-heading text-2xl font-black tracking-wider text-white flex items-center gap-1.5">
-              FLEXXI <span class="text-sky-400 text-sm font-semibold tracking-normal uppercase bg-sky-950/80 px-2 py-0.5 rounded border border-sky-800/60">GLOBAL TRADE</span>
+            <span class="font-heading text-2xl font-black tracking-tight text-white flex items-center gap-2">
+              FLEXXI <span class="text-sky-400 text-xs font-bold tracking-wider uppercase bg-blue-950/80 px-2 py-0.5 rounded border border-blue-800/60 shadow-sm">GLOBAL TRADE</span>
             </span>
             <p class="text-[11px] text-slate-400 font-medium tracking-tight -mt-0.5">Bridging Indian Quality to the World</p>
           </div>
         </a>
 
         <div class="hidden lg:flex items-center space-x-7 text-sm font-medium">
-          <a href="index.html" class="nav-link text-slate-300 transition hover:text-sky-400">Home</a>
-          <a href="about.html" class="nav-link text-slate-300 transition hover:text-sky-400">About Us</a>
-          <a href="products.html" class="nav-link text-slate-300 transition hover:text-sky-400">Products</a>
-          <a href="quality.html" class="nav-link text-slate-300 transition hover:text-sky-400">Quality & Sourcing</a>
-          <a href="export-process.html" class="nav-link text-slate-300 transition hover:text-sky-400">Export Process</a>
-          <a href="markets.html" class="nav-link text-sky-400 font-semibold transition hover:text-sky-300">Global Markets</a>
-          <a href="contact.html" class="nav-link text-slate-300 transition hover:text-sky-400">Contact</a>
+          <a href="index.html" class="nav-link-item text-slate-300">Home</a>
+          <a href="about.html" class="nav-link-item text-slate-300">About Us</a>
+          <a href="products.html" class="nav-link-item text-slate-300">Products</a>
+          <a href="quality.html" class="nav-link-item text-slate-300">Quality & Sourcing</a>
+          <a href="export-process.html" class="nav-link-item text-slate-300">Export Process</a>
+          <a href="markets.html" class="nav-link-item nav-link-active">Global Markets</a>
+          <a href="contact.html" class="nav-link-item text-slate-300">Contact</a>
         </div>
 
-        <div class="flex items-center space-x-4">
-          <a href="rfq.html" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold text-xs tracking-wide uppercase text-white bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 transition border border-sky-400/30">
-            <i class="fa-solid fa-file-invoice-dollar mr-2"></i> Request a Quote
+        <div class="flex items-center space-x-3">
+          <a href="rfq.html" class="btn-primary-blue px-5 py-2.5 text-xs">
+            <i class="fa-solid fa-file-invoice mr-2 text-xs"></i> Request Quote
           </a>
-          <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" class="lg:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
-            <i class="fa-solid fa-bars text-xl"></i>
+          <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" class="lg:hidden p-2.5 rounded-xl text-slate-300 hover:text-white bg-slate-800/80 border border-slate-700 focus:outline-none">
+            <i class="fa-solid fa-bars-staggered text-lg"></i>
           </button>
         </div>
       </div>
     </div>
 
     <!-- Mobile Dropdown -->
-    <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-800 bg-slate-900/95 px-4 pt-3 pb-6 space-y-2">
-      <a href="index.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Home</a>
-      <a href="about.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">About Us</a>
-      <a href="products.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Products</a>
-      <a href="quality.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Quality & Sourcing</a>
-      <a href="export-process.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Export Process & Logistics</a>
-      <a href="markets.html" class="block py-2 px-3 rounded-lg text-sky-400 bg-slate-800 font-medium">Global Markets</a>
-      <a href="contact.html" class="block py-2 px-3 rounded-lg text-slate-200 hover:bg-slate-800 font-medium">Contact Us</a>
+    <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-800 bg-[#071120]/98 px-5 pt-3 pb-6 space-y-2.5 backdrop-blur-xl">
+      <a href="index.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">Home</a>
+      <a href="about.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">About Us</a>
+      <a href="products.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">Products</a>
+      <a href="quality.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">Quality & Sourcing</a>
+      <a href="export-process.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">Export Process</a>
+      <a href="markets.html" class="block py-2 px-3 rounded-lg text-white bg-blue-950/60 font-medium">Global Markets</a>
+      <a href="contact.html" class="block py-2 px-3 rounded-lg text-slate-300 hover:bg-slate-800 font-medium">Contact Us</a>
+      <div class="pt-3">
+        <a href="rfq.html" class="btn-primary-blue block w-full text-center py-3 text-xs">
+          Request Commercial RFQ
+        </a>
+      </div>
     </div>
   </nav>
 
   <!-- BREADCRUMB & HEADER -->
-  <section class="py-16 bg-slate-950/70 border-b border-slate-800 relative bg-grid-pattern">
+  <section class="py-16 bg-[#040a14]/60 border-b border-slate-800/80 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center space-x-2 text-xs text-slate-400 mb-3">
         <a href="index.html" class="hover:text-sky-400">Home</a>
@@ -105,7 +101,7 @@
         <span class="text-sky-400 font-medium">Global Markets</span>
       </div>
       <h1 class="text-3xl sm:text-5xl font-extrabold text-white font-heading">
-        Strategic <span class="text-gradient">Target Markets</span>
+        Strategic <span class="text-sky-400">Target Markets</span>
       </h1>
       <p class="text-slate-300 max-w-2xl mt-4 text-base font-light">
         A clear, honest market development plan focused on high-demand import corridors where authentic Indian quality creates sustainable commercial advantage.
@@ -113,9 +109,9 @@
     </div>
   </section>
 
-  <!-- IMPORTANT MARKET DISCLOSURE NOTE (Mandatory by guidelines) -->
-  <section class="py-6 bg-sky-950/30 border-b border-sky-800/40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-3 text-xs text-sky-200">
+  <!-- IMPORTANT MARKET DISCLOSURE NOTE -->
+  <section class="py-5 bg-blue-950/20 border-b border-blue-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-3 text-xs text-blue-200">
       <i class="fa-solid fa-circle-info text-sky-400 text-sm"></i>
       <span>
         <strong>Market Focus Declaration:</strong> As an ethical merchant exporter, the regions below represent our strategic <em>Target Expansion Markets</em> and primary prospective buyer channels for bulk orders.
@@ -130,18 +126,18 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <!-- Region 1: Malaysia -->
-        <div class="glass-panel p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+        <div class="reliable-card p-8 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="text-3xl">🇲🇾</span>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">Southeast Asia Corridor</span>
+              <span class="trust-pill">Southeast Asia Corridor</span>
             </div>
             <h3 class="text-2xl font-bold text-white font-heading">Malaysia</h3>
             <p class="text-xs text-slate-400 mt-1">Key Ports: Port Klang, Penang</p>
             <p class="text-slate-300 text-sm mt-4 leading-relaxed">
               Malaysia represents a premier destination for Indian agro-commodities, food manufacturing ingredients, and health supplements. Strong culinary demand for dehydrated onion, groundnuts, and organic moringa powder for functional foods and beverage premixes.
             </p>
-            <div class="mt-6 pt-6 border-t border-slate-800/80 space-y-2 text-xs">
+            <div class="mt-6 pt-6 border-t border-slate-800 space-y-2 text-xs">
               <div class="font-semibold text-white">Target Products for this Region:</div>
               <ul class="list-disc list-inside text-slate-400 space-y-1">
                 <li>Moringa Powder (Nutraceuticals & Health Drinks)</li>
@@ -151,25 +147,25 @@
             </div>
           </div>
           <div class="mt-6 pt-4">
-            <a href="rfq.html?country=Malaysia" class="inline-flex items-center text-xs font-semibold text-sky-400 hover:text-sky-300">
+            <a href="rfq.html?country=Malaysia" class="inline-flex items-center text-xs font-semibold text-sky-400 hover:text-white">
               Submit Quotation for Port Klang Delivery <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
             </a>
           </div>
         </div>
 
         <!-- Region 2: UAE & GCC -->
-        <div class="glass-panel p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+        <div class="reliable-card p-8 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="text-3xl">🇦🇪</span>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">Middle East Gateway</span>
+              <span class="trust-pill text-amber-300 border-amber-500/30">Middle East Gateway</span>
             </div>
             <h3 class="text-2xl font-bold text-white font-heading">United Arab Emirates (UAE) & GCC</h3>
             <p class="text-xs text-slate-400 mt-1">Key Ports: Jebel Ali (Dubai), Port Rashid, Sharjah</p>
             <p class="text-slate-300 text-sm mt-4 leading-relaxed">
               The Middle East is one of the world's most vital trading centers for premium Indian rice and spices. Jebel Ali serves as an unparalleled re-export hub across the GCC and African markets, with high demand for premium 1121 Basmati Rice and bulk agro items.
             </p>
-            <div class="mt-6 pt-6 border-t border-slate-800/80 space-y-2 text-xs">
+            <div class="mt-6 pt-6 border-t border-slate-800 space-y-2 text-xs">
               <div class="font-semibold text-white">Target Products for this Region:</div>
               <ul class="list-disc list-inside text-slate-400 space-y-1">
                 <li>1121 & 1509 Premium Basmati Rice (Steam / Sella)</li>
@@ -179,25 +175,25 @@
             </div>
           </div>
           <div class="mt-6 pt-4">
-            <a href="rfq.html?country=UAE" class="inline-flex items-center text-xs font-semibold text-amber-400 hover:text-amber-300">
+            <a href="rfq.html?country=UAE" class="inline-flex items-center text-xs font-semibold text-amber-400 hover:text-white">
               Submit Quotation for Jebel Ali Delivery <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
             </a>
           </div>
         </div>
 
         <!-- Region 3: Singapore -->
-        <div class="glass-panel p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+        <div class="reliable-card p-8 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="text-3xl">🇸🇬</span>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Global Commercial Trading Hub</span>
+              <span class="trust-pill text-emerald-300 border-emerald-500/30">Trading Hub</span>
             </div>
             <h3 class="text-2xl font-bold text-white font-heading">Singapore</h3>
             <p class="text-xs text-slate-400 mt-1">Key Port: Port of Singapore (PSA)</p>
             <p class="text-slate-300 text-sm mt-4 leading-relaxed">
               Singapore demands exceptional quality compliance and lab precision. We target Singaporean multinational food developers and chemical distributors requiring premium grade Guar Gum Hydrocolloid, resistant starch green banana powder, and certified organic superfoods.
             </p>
-            <div class="mt-6 pt-6 border-t border-slate-800/80 space-y-2 text-xs">
+            <div class="mt-6 pt-6 border-t border-slate-800 space-y-2 text-xs">
               <div class="font-semibold text-white">Target Products for this Region:</div>
               <ul class="list-disc list-inside text-slate-400 space-y-1">
                 <li>Guar Gum Powder (High Viscosity Technical & Food Grades)</li>
@@ -207,25 +203,25 @@
             </div>
           </div>
           <div class="mt-6 pt-4">
-            <a href="rfq.html?country=Singapore" class="inline-flex items-center text-xs font-semibold text-emerald-400 hover:text-emerald-300">
+            <a href="rfq.html?country=Singapore" class="inline-flex items-center text-xs font-semibold text-emerald-400 hover:text-white">
               Submit Quotation for Singapore Delivery <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
             </a>
           </div>
         </div>
 
         <!-- Region 4: USA & Americas -->
-        <div class="glass-panel p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+        <div class="reliable-card p-8 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="text-3xl">🇺🇸</span>
-              <span class="text-xs font-semibold px-2.5 py-1 rounded bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Americas & Western Corridors</span>
+              <span class="trust-pill text-indigo-300 border-indigo-500/30">Western Gateway</span>
             </div>
             <h3 class="text-2xl font-bold text-white font-heading">United States & Americas</h3>
             <p class="text-xs text-slate-400 mt-1">Key Ports: New York / New Jersey, Los Angeles, Savannah</p>
             <p class="text-slate-300 text-sm mt-4 leading-relaxed">
               North America is the largest global consumer of functional botanicals, vegan proteins, and natural hydrocolloids. We position our laboratory-tested moringa, banana powder, and specialty hydrocolloids specifically for US importers seeking certified origin traceability.
             </p>
-            <div class="mt-6 pt-6 border-t border-slate-800/80 space-y-2 text-xs">
+            <div class="mt-6 pt-6 border-t border-slate-800 space-y-2 text-xs">
               <div class="font-semibold text-white">Target Products for this Region:</div>
               <ul class="list-disc list-inside text-slate-400 space-y-1">
                 <li>Heavy-Metal-Tested Organic Moringa Leaf Powder</li>
@@ -235,25 +231,12 @@
             </div>
           </div>
           <div class="mt-6 pt-4">
-            <a href="rfq.html?country=USA" class="inline-flex items-center text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+            <a href="rfq.html?country=USA" class="inline-flex items-center text-xs font-semibold text-sky-400 hover:text-white">
               Submit Quotation for US Seaports <i class="fa-solid fa-arrow-right ml-1.5 text-[10px]"></i>
             </a>
           </div>
         </div>
 
-      </div>
-
-      <!-- Additional international inquiries note -->
-      <div class="mt-12 glass-panel p-8 rounded-2xl border border-slate-800 text-center max-w-3xl mx-auto">
-        <h4 class="text-lg font-bold text-white">Looking to Import to Another Destination?</h4>
-        <p class="text-slate-400 text-xs sm:text-sm mt-2">
-          We service global trade inquiries from the UK, European Union, Africa, Central Asia, and Australia. Inquire with your discharge port of choice for tailored sea freight quotations.
-        </p>
-        <div class="mt-4">
-          <a href="rfq.html" class="inline-block px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-white font-semibold text-xs uppercase tracking-wider transition">
-            Request International Container Pricing
-          </a>
-        </div>
       </div>
 
     </div>
@@ -265,7 +248,7 @@
   </a>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-950 border-t border-slate-800/80 text-slate-400 text-sm py-10 mt-auto">
+  <footer class="bg-[#040a14] border-t border-slate-800/80 text-slate-400 text-sm py-10 mt-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs space-y-2">
       <p>© 2026 Flexxi Global Trade · Bridging Indian Quality to the World · B2B Merchant Exporter.</p>
     </div>
