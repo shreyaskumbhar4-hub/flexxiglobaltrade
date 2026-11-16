@@ -137,16 +137,52 @@ h1, h2, h3, h4, .font-heading {
   animation: shimmerEffect 8s linear infinite;
 }
 
-/* Interactive Compass Spin on Logo Hover */
+/* Interactive Brand Logo on Hover */
 .logo-icon-box {
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  position: relative;
 }
 .group:hover .logo-icon-box {
   transform: scale(1.08);
-  box-shadow: 0 0 25px rgba(37, 99, 235, 0.6);
+  box-shadow: 0 0 25px rgba(37, 99, 235, 0.65), 0 0 15px rgba(245, 158, 11, 0.35);
+}
+.group:hover .logo-icon-box img {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
 }
 .group:hover .logo-icon-box i {
   animation: compassSpin 1.2s ease-in-out;
+}
+
+/* Category Filter Tabs & Sea Container Tags */
+.cat-filter-btn {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cat-filter-btn.active {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  border-color: rgba(147, 197, 253, 0.5);
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.35);
+}
+.tag-dry-container {
+  background: rgba(15, 23, 42, 0.85);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.12);
+}
+.tag-reefer-container {
+  background: rgba(8, 47, 73, 0.85);
+  color: #22d3ee;
+  border: 1px solid rgba(34, 211, 238, 0.45);
+  box-shadow: 0 0 14px rgba(34, 211, 238, 0.2);
+}
+.tag-reefer-pulse {
+  animation: reeferGlow 2.5s ease-in-out infinite;
+}
+@keyframes reeferGlow {
+  0%, 100% { border-color: rgba(34, 211, 238, 0.35); box-shadow: 0 0 10px rgba(34, 211, 238, 0.15); }
+  50% { border-color: rgba(56, 189, 248, 0.7); box-shadow: 0 0 20px rgba(56, 189, 248, 0.35); }
 }
 
 /* Nav Item Animated Sliding Underline */

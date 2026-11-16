@@ -1,19 +1,34 @@
 # Flexxi Global Trade — Global Merchant Exporter Web Platform
 
-> **Tagline:** Bridging Indian Quality to the World  
+> **Tagline:** Connecting Nature to the World  
+> **Brand Identity:** High-resolution transparent emblem with cargo vessel, airliner, and globe motif  
 > **Aesthetic Philosophy:** Reliable Sovereign Navy Blue (`#071120`), Warm Gold (`#f59e0b`), Crisp White (`#ffffff`), and Vibrant Cyan (`#38bdf8`)  
 > **Motion Design:** Smooth staggered page entrance / starting keyframe animations  
-> **Deployment Target:** Cloudflare Pages (Static, Instant, Ultra-Secure)
+> **Deployment Target:** Cloudflare Pages & GitHub Pages (Static, Instant, Ultra-Secure)
 
 ---
 
 ## 🌟 Visual & Reliability Identity
 
-### 1. High-Trust Color System (No Over-Bright "Red" Warning Clutter)
-- **Deep Maritime Navy (`#071120` & `#0d1b32`)**: Evokes safety, stability, and professional corporate dependability.
-- **Sovereign Royal Blue (`#2563eb`)**: High-confidence primary button styling (`btn-primary-blue`) communicating trust and reliability.
-- **Warm Champagne Gold (`#f59e0b` & `#d97706`)**: Elegant secondary accent tone (`btn-warm-gold`) for catalog actions, symbolizing value and certified origin.
-- **Crisp Snow White & Ice Slates**: High contrast text hierarchy for zero eye fatigue.
+### 1. Official Brand Logo & Identity
+- High-resolution transparent PNG emblem saved at [`assets/images/logo.png`](assets/images/logo.png) integrated across all 14 site headers, footers, and favicons.
+- Official brand slogan: **"Connecting Nature to the World"** with maritime and air cargo logistics symbology.
+- Hover glow and scaling effects on brand icon containers.
+
+---
+
+### 2. Complete 10 Export Sectors & Sea Container Allocation System
+Full sea-freight agricultural and food export portfolio divided into dedicated containerization modes:
+1. **Powders** (`Dry 20ft/40ft`): Moringa powder, Banana powder, Onion powder, Tomato powder, Guar gum powder, Garlic powder, Ginger powder, Turmeric powder, Chilli powder.
+2. **Nuts & Oilseeds** (`Dry 20ft/40ft`): Groundnut (Peanuts), Coconut (Desiccated & Whole), Cashew nuts, Sesame seeds, Mustard seeds, Castor seeds.
+3. **Rice** (`Dry 20ft/40ft`): Basmati rice (1121, 1509), Non-Basmati rice (Sona Masoori, IR64, Parboiled rice, Broken rice).
+4. **Agri & Commodities** (`Dry 20ft/40ft`): Onion, Guar gum, Potato, Garlic, Sugar (ICUMSA), Jaggery, Cotton bales, Maize (Corn), Wheat.
+5. **Fresh Fruits** (`Reefer Refrigerated`): Pomegranate, Grapes, Mango (Alphonso & Kesar), Banana (Cavendish G9), Guava, Papaya, Watermelon, Orange.
+6. **Fresh Vegetables** (`Reefer Refrigerated`): Red onion, Green chilli, Okra (Ladyfinger), Drumstick (Moringa pods), Lemon, Tomato, Ginger.
+7. **Spices** (`Dry 20ft/40ft`): Turmeric, Red chilli (Sanam, Teja, Byadgi), Cumin (Jeera), Coriander, Black pepper, Cardamom, Cloves, Fenugreek.
+8. **Pulses & Lentils** (`Dry 20ft/40ft`): Chickpeas (Kabuli Chana), Toor dal, Moong dal, Urad dal, Masoor dal.
+9. **Beverages & Plantation** (`Dry 20ft/40ft`): Tea (Assam CTC, Orthodox, Green), Coffee beans (Robusta & Arabica), Cocoa.
+10. **Processed & Frozen Foods** (`Reefer Refrigerated -18°C`): Mango pulp (Aseptic), Pickles, Pappad, Frozen vegetables (IQF), Frozen seafood (Shrimps, Fish).
 
 ---
 
