@@ -223,13 +223,39 @@ h1, h2, h3, h4, .font-heading {
   background: linear-gradient(90deg, #60a5fa, #f59e0b);
 }
 
-/* Ambient Background Meshes */
+/* Ambient Background Meshes & Centered 20% Visible Logo Watermark */
 .reliable-bg-mesh {
   background-image: 
-    radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.15) 0%, transparent 45%),
-    radial-gradient(circle at 85% 25%, rgba(245, 158, 11, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 15% 15%, rgba(37, 99, 235, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 85% 25%, rgba(245, 158, 11, 0.09) 0%, transparent 40%),
     radial-gradient(circle at 50% 85%, rgba(16, 185, 129, 0.06) 0%, transparent 50%);
   background-attachment: fixed;
+  position: relative;
+}
+
+/* Single Unified Centered Background Watermark (Behind all sections and content) */
+body::before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 780px;
+  max-width: 85vw;
+  height: 780px;
+  max-height: 85vh;
+  transform: translate(-50%, -50%);
+  background: url('../images/logo.png') no-repeat center center;
+  background-size: contain;
+  opacity: 0.20;
+  filter: blur(2px) drop-shadow(0 0 50px rgba(37, 99, 235, 0.4));
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure all page content and sections sit distinctly above the single background watermark */
+header, nav, section, footer, .relative {
+  position: relative;
+  z-index: 1;
 }
 
 .reliable-grid-pattern {

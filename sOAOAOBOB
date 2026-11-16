@@ -1,0 +1,35 @@
+[33mcommit 905879e4b4700db96b8c287cc2ea13d2dc8ba52d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;33mtag: [m[1;33mv3.0[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Shreyas Kumbhar <shreyaskumbhar4@2004>
+Date:   Mon Nov 16 19:48:35 2026 +0530
+
+    updated product for website and add logo
+
+[33mcommit 0457d04c677e22d3b8770c267adc120dfcb75ad6[m[33m ([m[1;33mtag: [m[1;33mv2.0.0[m[33m)[m
+Author: Shreyas Kumbhar <shreyaskumbhar4@2004>
+Date:   Tue Nov 10 18:19:42 2026 +0530
+
+    Add GitHub Actions workflow for GitHub Pages deployment
+
+[33mcommit b37fa8762f07ecd79463f053581dabc0e968ca24[m[33m ([m[1;33mtag: [m[1;33mv1.0.0[m[33m)[m
+Author: Shreyas Kumbhar <shreyaskumbhar4@2004>
+Date:   Tue Nov 10 18:10:02 2026 +0530
+
+    updated header to all pages
+
+[33mcommit b1fd4977a02c170f6418f88917dc8cfd4ce7c95f[m
+Author: Shreyas Kumbhar <shreyaskumbhar4@2004>
+Date:   Tue Nov 10 17:58:01 2026 +0530
+
+    header design chenge
+
+[33mcommit 23538a319daeef780f8a4d2cf18262ca7c61d86a[m
+Author: Shreyas Kumbhar <shreyaskumbhar4@2004>
+Date:   Tue Nov 10 17:53:55 2026 +0530
+
+    v2
+
+[33mcommit 2f366583b84e3a1549184dbf898f1c32c8300c25[m
+Author: Shreyas Kumbhar <shreyaskumbhar4@2004>
+Date:   Tue Nov 10 17:43:49 2026 +0530
+
+    demo first ready

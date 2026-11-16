@@ -10,8 +10,13 @@
 
 ## 🌟 Visual & Reliability Identity
 
-### 1. Official Brand Logo & Identity
+### 1. Official Brand Logo & Production Background Atmosphere
 - High-resolution transparent PNG emblem saved at [`assets/images/logo.png`](assets/images/logo.png) integrated across all 14 site headers, footers, and favicons.
+- **Ambient Blurred Background Watermark (`body::before` & `.hero-blurred-watermark`)**: 
+  - Perfectly centered in the viewport (`top: 50%; left: 50%; transform: translate(-50%, -50%)`).
+  - Tuned to **20% opacity (`opacity: 0.20`)** with a light, crisp blur (`filter: blur(2px) drop-shadow(...)`), making the globe, ship, airplane, and brand details cleanly discernible while preserving text contrast and readability.
+  - Interactive `.hero-blurred-watermark` on the homepage featuring an atmospheric centered floating drift (`watermarkDrift 16s ease-in-out infinite alternate`).
+  - Strict `pointer-events: none` and `z-index: 0` ensuring 100% interactive integrity on all buttons, forms, and cards.
 - Official brand slogan: **"Connecting Nature to the World"** with maritime and air cargo logistics symbology.
 - Hover glow and scaling effects on brand icon containers.
 
