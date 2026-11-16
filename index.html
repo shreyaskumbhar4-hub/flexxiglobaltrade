@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -44,8 +44,10 @@
   <!-- Top Scroll Progress Indicator -->
   <div id="scroll-progress"></div>
 
-  <!-- TOP MARITIME GATEWAY BAR -->
-  <header class="border-b border-slate-800/80 bg-[#040a14]/95 text-xs text-slate-400 py-2.5 px-4 backdrop-blur-md sticky top-0 z-50">
+  <!-- NAVIGATION SCROLL WRAPPER (Auto-Hides on Scroll Down to Reveal Background Logo) -->
+  <div id="main-nav-wrapper" class="nav-scroll-wrapper">
+    <!-- TOP MARITIME GATEWAY BAR -->
+    <header class="border-b border-slate-800/80 bg-[#040a14]/95 text-xs text-slate-400 py-2.5 px-4 backdrop-blur-md relative z-50">
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center space-x-4">
         <span class="inline-flex items-center text-white font-semibold tracking-wide">
@@ -68,28 +70,29 @@
   </header>
 
   <!-- SOPHISTICATED & ATTRACTIVE ANIMATED NAVBAR -->
-  <nav class="sticky top-[39px] z-40 reliable-navbar header-entrance-anim shadow-2xl relative">
+  <nav class="relative z-40 reliable-navbar shadow-2xl">
     <!-- Animated Edge Reflection Shimmer Border -->
     <div class="navbar-shimmer-border"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-24">
         
         <!-- Interactive Compass Animated Logo -->
         <a href="index.html" class="flex items-center space-x-3.5 group">
-          <div class="logo-icon-box w-12 h-12 rounded-xl bg-[#030914] p-1 flex items-center justify-center shadow-lg shadow-blue-600/30 border border-blue-500/40">
-            <img src="assets/images/logo.png" alt="Flexxi Global Trade Logo" class="w-full h-full object-contain rounded-lg">
+          <div class="logo-icon-box w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#071329] p-1.5 flex items-center justify-center shadow-xl shadow-blue-600/40 border border-blue-400/50">
+            <img src="assets/images/logo.png" alt="Flexxi Global Trade Logo" class="w-full h-full object-contain rounded-xl">
           </div>
-          <div>
-            <span class="font-heading text-2xl font-black tracking-tight text-white flex items-center gap-2">
-              FLEXXI <span class="text-sky-400 text-xs font-bold tracking-wider uppercase bg-blue-950/80 px-2 py-0.5 rounded border border-blue-800/60 shadow-sm">GLOBAL TRADE</span>
-            </span>
-            <p class="text-[11px] text-slate-400 font-medium tracking-tight -mt-0.5">Connecting Nature to the World</p>
+          <div class="flex flex-col justify-center">
+            <div class="flex items-center gap-2">
+              <span class="font-heading text-2xl sm:text-[1.65rem] font-black tracking-tight text-white leading-none">FLEXXI</span>
+              <span class="text-sky-400 text-xs font-extrabold tracking-wider uppercase bg-blue-950/90 px-2.5 py-0.5 rounded-md border border-blue-700/70 shadow-sm">GLOBAL TRADE</span>
+            </div>
+            <p class="text-[11px] sm:text-xs text-sky-200/80 font-medium tracking-wide mt-1">Connecting Nature to the World</p>
           </div>
         </a>
 
         <!-- Desktop Navigation Links with Animated Sliding Underline Indicator -->
-        <div class="hidden lg:flex items-center space-x-7 text-sm font-medium">
+        <div class="hidden lg:flex items-center space-x-4 xl:space-x-7 text-xs xl:text-sm font-semibold whitespace-nowrap">
           <a href="index.html" class="nav-link-item nav-link-active">Home</a>
           <a href="about.html" class="nav-link-item text-slate-300">About Us</a>
           <a href="products.html" class="nav-link-item text-slate-300">Products</a>
@@ -133,6 +136,45 @@
       </div>
     </div>
   </nav>
+
+  <!-- MOVING WORDS ANNOUNCEMENT TICKER (LIVE MARITIME STRIP) -->
+  <div class="subnav-ticker py-2 px-4 relative z-30 overflow-hidden">
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <span class="ticker-pill"><i class="fa-solid fa-ship"></i> Ocean Gateways: Nhava Sheva (JNPT) & Mundra Port</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-temperature-arrow-down text-cyan-400"></i> Active Reefer Cold-Chain: -18�C Deep Freeze & Controlled Atmosphere</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-circle-check text-emerald-400"></i> 100% Laboratory Batch COA Certified</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-box text-sky-400"></i> ISO Dry Containers (20ft / 40ft) & Desiccant Moisture Protection</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-earth-americas text-amber-400"></i> Major Export Corridors: Malaysia � UAE � Singapore � Europe � USA</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-bolt text-yellow-400"></i> Fast B2B Commercial Turnaround � Under 24h Formal Proforma Quotes</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-award text-blue-400"></i> APEDA � Spices Board � FSSAI � Government of India Recognized</span>
+        <span class="ticker-dot"></span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span class="ticker-pill"><i class="fa-solid fa-ship"></i> Ocean Gateways: Nhava Sheva (JNPT) & Mundra Port</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-temperature-arrow-down text-cyan-400"></i> Active Reefer Cold-Chain: -18�C Deep Freeze & Controlled Atmosphere</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-circle-check text-emerald-400"></i> 100% Laboratory Batch COA Certified</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-box text-sky-400"></i> ISO Dry Containers (20ft / 40ft) & Desiccant Moisture Protection</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-earth-americas text-amber-400"></i> Major Export Corridors: Malaysia � UAE � Singapore � Europe � USA</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-bolt text-yellow-400"></i> Fast B2B Commercial Turnaround � Under 24h Formal Proforma Quotes</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-pill"><i class="fa-solid fa-award text-blue-400"></i> APEDA � Spices Board � FSSAI � Government of India Recognized</span>
+        <span class="ticker-dot"></span>
+      </div>
+    </div>
+  </div>
+  </div><!-- /main-nav-wrapper -->
 
   <!-- HERO SECTION WITH STARTING ENTRANCE ANIMATIONS -->
   <section class="relative pt-16 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">

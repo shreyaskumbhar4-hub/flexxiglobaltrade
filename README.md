@@ -12,11 +12,22 @@
 
 ### 1. Official Brand Logo & Production Background Atmosphere
 - High-resolution transparent PNG emblem saved at [`assets/images/logo.png`](assets/images/logo.png) integrated across all 14 site headers, footers, and favicons.
-- **Ambient Blurred Background Watermark (`body::before` & `.hero-blurred-watermark`)**: 
+- **High-Visibility Professional Theme**:
+  - Lightened and elevated base maritime navy from `#071120` to `#0b1528` with richer slate cards (`#182c52`), crisp typography (`#e2e8f0` and `#ffffff`), and vibrant blue/gold glows (`rgba(59, 130, 246, 0.55)`).
+  - Prominent Navbar Logo: Upgraded brand logo to larger responsive dimensions (`w-14 h-14 sm:w-16 sm:h-16`) with a spacious `h-24` navbar, crisp `FLEXXI` display typography, and a dedicated status badge.
+- **Smart Auto-Hiding Navigation Bar & Device Responsiveness**:
+  - Automatically slides up and hides (`.nav-hidden`) when scrolling down, revealing the centered watermark logo and hero content in full viewport.
+  - Automatically slides back down and reveals when scrolling up or at the top of the page.
+  - Calibrated responsive layout for mobile, tablet (iPad/tablets up to 1279px via clean hamburger drawer), and wide desktop displays (1280px+).
+- **Proportionate Background Watermark**:
+  - Resized from 780px to a balanced **540px (`max-width: 72vw; max-height: 65vh; top: 55%`)** on desktop and **340px on mobile/tablets**, completely clearing the top navigation bar so it never gets cropped or hidden.
+- **Moving Words Maritime Announcement Ribbon (`.subnav-ticker`)**:
+  - Positioned seamlessly directly beneath the navbar across all 14 pages.
+  - Continuous infinite marquee animation featuring live port gateways (JNPT, Mundra), active reefer cold-chain (-18°C), 100% lab COA certification, container modes, global export corridors, and regulatory recognitions (APEDA, Spices Board, FSSAI).
+- **Ambient Blurred Background Watermark (`body::before`)**: 
   - Perfectly centered in the viewport (`top: 50%; left: 50%; transform: translate(-50%, -50%)`).
   - Tuned to **20% opacity (`opacity: 0.20`)** with a light, crisp blur (`filter: blur(2px) drop-shadow(...)`), making the globe, ship, airplane, and brand details cleanly discernible while preserving text contrast and readability.
-  - Interactive `.hero-blurred-watermark` on the homepage featuring an atmospheric centered floating drift (`watermarkDrift 16s ease-in-out infinite alternate`).
-  - Strict `pointer-events: none` and `z-index: 0` ensuring 100% interactive integrity on all buttons, forms, and cards.
+  - Layered with `z-index: 0` and `pointer-events: none` beneath elevated content containers (`z-index: 1`) to eliminate any overlap issues.
 - Official brand slogan: **"Connecting Nature to the World"** with maritime and air cargo logistics symbology.
 - Hover glow and scaling effects on brand icon containers.
 

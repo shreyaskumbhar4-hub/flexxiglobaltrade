@@ -2,23 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 :root {
-  --bg-navy-deep: #071120;
-  --bg-navy-surface: #0d1b32;
-  --bg-navy-card: #122443;
-  --bg-card-hover: #162c52;
-  --border-subtle: rgba(255, 255, 255, 0.09);
-  --border-focus: rgba(37, 99, 235, 0.45);
+  --bg-navy-deep: #0b1528;
+  --bg-navy-surface: #13223f;
+  --bg-navy-card: #182c52;
+  --bg-card-hover: #1f3765;
+  --border-subtle: rgba(255, 255, 255, 0.14);
+  --border-focus: rgba(59, 130, 246, 0.6);
 
   --c-blue-primary: #2563eb;
   --c-blue-hover: #1d4ed8;
-  --c-blue-glow: rgba(37, 99, 235, 0.28);
+  --c-blue-glow: rgba(37, 99, 235, 0.35);
   --c-gold-accent: #f59e0b;
   --c-gold-hover: #d97706;
-  --c-gold-glow: rgba(245, 158, 11, 0.25);
+  --c-gold-glow: rgba(245, 158, 11, 0.3);
   --c-emerald: #10b981;
 
   --text-primary: #ffffff;
-  --text-secondary: #cbd5e1;
+  --text-secondary: #e2e8f0;
   --text-muted: #94a3b8;
 
   --font-heading: 'Outfit', sans-serif;
@@ -112,11 +112,11 @@ h1, h2, h3, h4, .font-heading {
 
 /* Glassmorphism Navbar with ambient edge reflection */
 .reliable-navbar {
-  background: rgba(7, 17, 32, 0.82);
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  background: rgba(11, 21, 40, 0.92);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 35px -10px rgba(0, 0, 0, 0.45), 0 0 20px rgba(37, 99, 235, 0.08);
   transition: all 0.35s ease;
 }
 
@@ -129,9 +129,9 @@ h1, h2, h3, h4, .font-heading {
   height: 1px;
   background: linear-gradient(90deg, 
     transparent 0%, 
-    rgba(56, 189, 248, 0.3) 25%, 
-    rgba(245, 158, 11, 0.6) 50%, 
-    rgba(37, 99, 235, 0.4) 75%, 
+    rgba(56, 189, 248, 0.4) 25%, 
+    rgba(245, 158, 11, 0.7) 50%, 
+    rgba(37, 99, 235, 0.5) 75%, 
     transparent 100%);
   background-size: 200% 100%;
   animation: shimmerEffect 8s linear infinite;
@@ -144,11 +144,11 @@ h1, h2, h3, h4, .font-heading {
   position: relative;
 }
 .group:hover .logo-icon-box {
-  transform: scale(1.08);
-  box-shadow: 0 0 25px rgba(37, 99, 235, 0.65), 0 0 15px rgba(245, 158, 11, 0.35);
+  transform: scale(1.06);
+  box-shadow: 0 0 30px rgba(37, 99, 235, 0.7), 0 0 18px rgba(245, 158, 11, 0.4);
 }
 .group:hover .logo-icon-box img {
-  transform: scale(1.05);
+  transform: scale(1.04);
   transition: transform 0.4s ease;
 }
 .group:hover .logo-icon-box i {
@@ -237,25 +237,50 @@ h1, h2, h3, h4, .font-heading {
 body::before {
   content: '';
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
-  width: 780px;
-  max-width: 85vw;
-  height: 780px;
-  max-height: 85vh;
+  width: 540px;
+  max-width: 72vw;
+  height: 540px;
+  max-height: 65vh;
   transform: translate(-50%, -50%);
   background: url('../images/logo.png') no-repeat center center;
   background-size: contain;
   opacity: 0.20;
-  filter: blur(2px) drop-shadow(0 0 50px rgba(37, 99, 235, 0.4));
+  filter: blur(1.5px) drop-shadow(0 0 35px rgba(37, 99, 235, 0.35));
   pointer-events: none;
   z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  body::before {
+    top: 58%;
+    width: 340px;
+    height: 340px;
+    max-width: 80vw;
+    opacity: 0.16;
+  }
 }
 
 /* Ensure all page content and sections sit distinctly above the single background watermark */
 header, nav, section, footer, .relative {
   position: relative;
   z-index: 1;
+}
+
+/* Smart Smart-Hide Navigation on Down-Scroll & Auto-Reveal on Up-Scroll */
+.nav-scroll-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+  will-change: transform;
+}
+
+.nav-scroll-wrapper.nav-hidden {
+  transform: translateY(-100%);
+  box-shadow: none;
 }
 
 .reliable-grid-pattern {
@@ -308,9 +333,42 @@ header, nav, section, footer, .relative {
   box-shadow: 0 16px 30px -5px rgba(245, 158, 11, 0.4);
 }
 
+/* Sub-Navbar Infinite Ticker Ribbon */
+.subnav-ticker {
+  background: linear-gradient(90deg, #0d1b33 0%, #102447 50%, #0d1b33 100%);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.25);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.subnav-ticker .ticker-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #cbd5e1;
+  white-space: nowrap;
+}
+
+.subnav-ticker .ticker-pill i {
+  color: #38bdf8;
+  margin-right: 0.45rem;
+  font-size: 0.7rem;
+}
+
+.subnav-ticker .ticker-dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px;
+  background: #f59e0b;
+  margin: 0 1.25rem;
+  opacity: 0.75;
+}
+
 /* Reliable Trust Card */
 .reliable-card {
-  background: linear-gradient(145deg, rgba(18, 36, 67, 0.75) 0%, rgba(13, 27, 50, 0.88) 100%);
+  background: linear-gradient(145deg, rgba(24, 44, 82, 0.85) 0%, rgba(19, 34, 63, 0.92) 100%);
   backdrop-filter: blur(16px);
   border: 1px solid var(--border-subtle);
   border-radius: 1.25rem;
@@ -321,9 +379,9 @@ header, nav, section, footer, .relative {
 
 .reliable-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(37, 99, 235, 0.4);
-  background: linear-gradient(145deg, rgba(22, 44, 82, 0.85) 0%, rgba(15, 31, 58, 0.95) 100%);
-  box-shadow: 0 20px 40px -12px rgba(2, 6, 23, 0.7), 0 0 25px rgba(37, 99, 235, 0.12);
+  border-color: rgba(59, 130, 246, 0.55);
+  background: linear-gradient(145deg, rgba(31, 55, 101, 0.92) 0%, rgba(24, 44, 82, 0.98) 100%);
+  box-shadow: 0 20px 40px -12px rgba(2, 6, 23, 0.6), 0 0 28px rgba(37, 99, 235, 0.2);
 }
 
 .reliable-card::after {

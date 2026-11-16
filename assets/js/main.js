@@ -10,16 +10,46 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. Scroll Progress Bar
+  // 1. Scroll Progress Bar & Smart Auto-Hiding Navbar on Down-Scroll
   const progressBar = document.getElementById('scroll-progress');
-  if (progressBar) {
-    window.addEventListener('scroll', () => {
-      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+  const navWrapper = document.getElementById('main-nav-wrapper') || document.querySelector('.nav-scroll-wrapper');
+  let lastScrollY = window.scrollY || document.documentElement.scrollTop;
+  let ticking = false;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY || document.documentElement.scrollTop;
+
+    // Update progress bar
+    if (progressBar) {
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+      const scrolled = height > 0 ? (currentScrollY / height) * 100 : 0;
       progressBar.style.width = scrolled + '%';
-    }, { passive: true });
-  }
+    }
+
+    // Smart-Hide Navigation on Down-Scroll, Auto-Reveal on Up-Scroll
+    if (navWrapper && !ticking) {
+      window.requestAnimationFrame(() => {
+        const delta = currentScrollY - lastScrollY;
+        const mobileMenu = document.getElementById('mobile-menu');
+        const isMobileMenuOpen = mobileMenu && !mobileMenu.classList.contains('hidden');
+
+        // Do not hide if mobile drawer is currently open or near the very top
+        if (currentScrollY <= 80) {
+          navWrapper.classList.remove('nav-hidden');
+        } else if (delta > 8 && !isMobileMenuOpen) {
+          // Scrolling DOWN -> hide navbar to show full background logo and content
+          navWrapper.classList.add('nav-hidden');
+        } else if (delta < -8) {
+          // Scrolling UP -> reveal navbar instantly
+          navWrapper.classList.remove('nav-hidden');
+        }
+
+        lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
 
   // 2. Responsive Collapsible Mobile Menu Drawer
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
