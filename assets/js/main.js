@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
           `*Email:* ${email}\n` +
           `*Specifics:* ${message}`
         );
-        const whatsappLink = `https://wa.me/919876543210?text=${whatsappMsg}`;
+        const whatsappLink = `https://wa.me/+917769050079?text=${whatsappMsg}`;
 
         const emailActionBtn = document.getElementById('modal-email-btn');
         const waActionBtn = document.getElementById('modal-wa-btn');
